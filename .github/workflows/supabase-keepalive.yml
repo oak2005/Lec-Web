@@ -1,0 +1,27 @@
+name: Supabase 24h Keepalive
+
+on:
+  schedule:
+    # Runs every 12 hours (at 00:00 and 12:00 UTC) to ensure Supabase never notices inactivity
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
+
+jobs:
+  keepalive:
+    name: Ping Supabase Database
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send API ping to Supabase REST endpoint
+        run: |
+          echo "Sending keepalive request to Supabase to prevent free tier inactivity pause..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhanR0aG5heHViY2JtcGNlb3BmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc0MDEyOTgsImV4cCI6MjEwMjk3NzI5OH0.xaKhogbm5-vKHeCAHevrhODqMIaoE-P4lju-lZgoSGI' }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhanR0aG5heHViY2JtcGNlb3BmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc0MDEyOTgsImV4cCI6MjEwMjk3NzI5OH0.xaKhogbm5-vKHeCAHevrhODqMIaoE-P4lju-lZgoSGI' }}" \
+            "https://fajtthnaxubcbmpceopf.supabase.co/rest/v1/site_content?id=eq.main&select=id")
+          
+          echo "HTTP response status code: $HTTP_STATUS"
+          if [ "$HTTP_STATUS" -eq 200 ] || [ "$HTTP_STATUS" -eq 204 ]; then
+            echo "SUCCESS: Supabase project is active and ping registered. Free tier pause prevented."
+          else
+            echo "Ping completed with status code $HTTP_STATUS"
+          fi

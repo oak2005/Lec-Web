@@ -3,344 +3,1609 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="pageTitle">Lavish Exclusive Chemical &amp; Interior Concept | Luxury Meets Innovation</title>
-<meta id="pageDesc" name="description" content="LEC manufactures premium decorative and protective paints, industrial paint chemicals, and delivers professional interior design and building finishing across Nigeria.">
+<title id="pageTitle">Lavish Exclusive Chemical | Luxury Paints &amp; Industrial Chemicals</title>
+<meta id="pageDesc" name="description" content="Lavish Exclusive Chemical (LEC) manufactures premium decorative and protective paints, high-grade industrial paint chemicals, and delivers expert interior and building finishing across Nigeria. Registered Business RN: 9043776.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --black:#0d0d0d;
-    --black-soft:#161616;
-    --gold:#d4af37;
-    --gold-soft:#e8cd7a;
-    --white:#ffffff;
-    --gray:#f8f8f8;
-    --ink:#0d0d0d;
-    --ink-60:rgba(13,13,13,.62);
-    --ink-40:rgba(13,13,13,.4);
-    --line:rgba(13,13,13,.1);
-    --line-on-black:rgba(255,255,255,.12);
-    --shadow-card:0 14px 34px -20px rgba(13,13,13,.35);
-    --ease:cubic-bezier(.22,1,.36,1);
+  :root {
+    --black: #0c0d0f;
+    --black-soft: #14161a;
+    --black-card: #181b20;
+    --gold: #d4af37;
+    --gold-hover: #e6c559;
+    --gold-light: rgba(212, 175, 55, 0.12);
+    --gold-glow: rgba(212, 175, 55, 0.25);
+    --white: #ffffff;
+    --gray-bg: #f8f9fa;
+    --gray-card: #f1f3f6;
+    --gray-line: rgba(12, 13, 15, 0.08);
+    --text-main: #111317;
+    --text-muted: #555b68;
+    --text-sub: #788090;
+    --line-dark: rgba(255, 255, 255, 0.1);
+    --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 12px 28px -10px rgba(0, 0, 0, 0.09);
+    --shadow-lg: 0 24px 50px -18px rgba(0, 0, 0, 0.15);
+    --shadow-gold: 0 14px 30px -10px rgba(212, 175, 55, 0.35);
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
   }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms !important; transition-duration:.001ms !important;} }
-  body{ margin:0; background:var(--white); color:var(--ink); font-family:'Manrope',sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
-  h1,h2,h3,.serif{ font-family:'Cormorant Garamond',serif; font-weight:600; letter-spacing:-.005em; }
-  h1,h2,h3{ margin:0; color:var(--ink); }
-  p{ margin:0; }
-  a{ color:inherit; text-decoration:none; }
-  img{ max-width:100%; display:block; }
-  ul{ margin:0; padding:0; list-style:none; }
-  button{ font-family:inherit; cursor:pointer; }
-  .wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
-  @media (max-width:640px){ .wrap{ padding:0 20px; } }
-  .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-size:11.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); font-weight:800; }
-  .eyebrow::before{ content:''; width:22px; height:1px; background:var(--gold); }
-  section{ position:relative; }
-  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:16px 30px; border-radius:4px; font-weight:700; font-size:14px; letter-spacing:.02em; border:1px solid transparent; transition:transform .4s var(--ease), box-shadow .4s var(--ease), background .3s, color .3s, border-color .3s; white-space:nowrap; }
-  .btn-gold{ background:var(--gold); color:var(--black); box-shadow:0 14px 26px -14px rgba(212,175,55,.55); }
-  .btn-gold:hover{ transform:translateY(-2px); background:var(--gold-soft); }
-  .btn-outline{ background:transparent; color:var(--white); border-color:rgba(255,255,255,.35); }
-  .btn-outline:hover{ border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
-  .btn-outline-dark{ background:transparent; color:var(--ink); border-color:var(--line); }
-  .btn-outline-dark:hover{ border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
 
-  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
-  .reveal.in{ opacity:1; transform:translateY(0); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--white);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, .heading {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--text-main);
+  }
+
+  p { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  button { font-family: inherit; cursor: pointer; border: none; }
+
+  .wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  @media (max-width: 768px) {
+    .wrap { padding: 0 20px; }
+  }
+
+  /* Badge & Eyebrow */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 2px;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+    transition: all 0.35s var(--ease-out);
+    white-space: nowrap;
+    text-align: center;
+  }
+  .btn-gold {
+    background: var(--gold);
+    color: #0c0d0f;
+    box-shadow: var(--shadow-gold);
+  }
+  .btn-gold:hover {
+    background: var(--gold-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px -10px rgba(212, 175, 55, 0.45);
+  }
+  .btn-gold:active { transform: translateY(0); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .btn-outline:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.06);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline-dark {
+    background: transparent;
+    color: var(--text-main);
+    border-color: var(--gray-line);
+  }
+  .btn-outline-dark:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .btn-sm {
+    padding: 9px 18px;
+    font-size: 13px;
+  }
+
+  /* Micro Animation & Reveals */
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.75s var(--ease-out), transform 0.75s var(--ease-out);
+    will-change: opacity, transform;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   /* ---------- Header ---------- */
-  header{ position:fixed; top:0; left:0; right:0; z-index:200; background:rgba(13,13,13,.9); backdrop-filter:blur(12px); border-bottom:1px solid transparent; transition:border-color .4s; }
-  header.scrolled{ border-color:rgba(212,175,55,.25); }
-  .nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 32px; max-width:1320px; margin:0 auto; }
-  .logo{ display:flex; align-items:center; gap:11px; font-family:'Cormorant Garamond',serif; font-size:21px; color:var(--white); font-weight:600; }
-  .logo-mark{ width:36px; height:36px; border-radius:3px; background:var(--black); border:1px solid var(--gold); position:relative; flex:none; display:flex; align-items:center; justify-content:center; overflow:hidden; }
-  .logo-mark::after{ content:'L'; font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:18px; }
-  .logo-mark.has-img::after{ content:''; }
-  .logo-mark img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .logo b{ font-weight:600; color:var(--gold); }
-  .nav-links{ display:flex; align-items:center; gap:32px; font-size:13.5px; font-weight:700; letter-spacing:.02em; }
-  .nav-links a{ color:rgba(255,255,255,.72); position:relative; padding:4px 0; transition:color .3s; }
-  .nav-links a:hover{ color:var(--gold); }
-  .nav-actions{ display:flex; align-items:center; gap:12px; }
-  .icon-btn{ width:38px; height:38px; border-radius:50%; border:1px solid rgba(255,255,255,.18); display:flex; align-items:center; justify-content:center; background:transparent; transition:border-color .3s; flex:none; color:#fff; }
-  .icon-btn:hover{ border-color:var(--gold); }
-  .icon-btn svg{ width:16px; height:16px; }
-  .burger{ display:none; }
-  @media (max-width:960px){ .nav-links{ display:none; } .burger{ display:flex; } }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: rgba(12, 13, 15, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.4s var(--ease-out);
+  }
+  header.scrolled {
+    background: rgba(12, 13, 15, 0.96);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .nav-inner { padding: 14px 20px; }
+  }
 
-  .mobile-menu{ position:fixed; inset:0; z-index:300; background:var(--black); color:#fff; display:flex; flex-direction:column; padding:26px 28px; transform:translateY(-100%); transition:transform .5s var(--ease); }
-  .mobile-menu.open{ transform:translateY(0); }
-  .mobile-menu .top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:44px; }
-  .mobile-menu a{ font-family:'Cormorant Garamond',serif; font-size:30px; padding:13px 0; border-bottom:1px solid rgba(255,255,255,.1); color:#fff; }
-  .mobile-menu .cta-row{ margin-top:auto; display:flex; gap:12px; flex-wrap:wrap; }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.01em;
+  }
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    background: var(--black-soft);
+    border: 1.5px solid var(--gold);
+    position: relative;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+  }
+  .logo-mark::after {
+    content: 'LEC';
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+  .logo-mark.has-img::after { content: ''; }
+  .logo-mark img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .logo b { color: var(--gold); font-weight: 700; }
+  .logo span.logo-sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.45);
+    font-weight: 500;
+    display: block;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+  }
+  .nav-links a {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 6px 0;
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width 0.3s var(--ease-out);
+    border-radius: 2px;
+  }
+  .nav-links a:hover {
+    color: var(--gold);
+  }
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .icon-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+  }
+  .burger { display: none; }
+  @media (max-width: 1024px) {
+    .nav-links { display: none; }
+    .burger { display: flex; }
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background: var(--black);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 28px;
+    transform: translateY(-100%);
+    transition: transform 0.45s var(--ease-out);
+  }
+  .mobile-menu.open { transform: translateY(0); }
+  .mobile-menu .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .mobile-menu a.mm-link {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    transition: color 0.25s;
+  }
+  .mobile-menu a.mm-link:hover { color: var(--gold); }
+  .mobile-menu .cta-row {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
   /* ---------- Hero ---------- */
-  .hero{ background:var(--black); padding:150px 0 90px; }
-  .hero-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:center; }
-  @media (max-width:980px){ .hero-grid{ grid-template-columns:1fr; gap:44px; } .hero{ padding-top:120px; } }
-  .hero h1{ font-size:clamp(34px,4.6vw,54px); line-height:1.12; color:#fff; }
-  .hero h1 .accent{ color:var(--gold); }
-  .hero p.lede{ margin-top:20px; font-size:16.5px; line-height:1.7; color:rgba(255,255,255,.62); max-width:500px; }
-  .hero-ctas{ margin-top:32px; display:flex; gap:16px; flex-wrap:wrap; }
-  .reg-badge{ margin-top:36px; display:inline-flex; align-items:center; gap:10px; font-size:12px; color:rgba(255,255,255,.5); border:1px solid rgba(255,255,255,.15); padding:8px 14px; border-radius:100px; }
-  .reg-badge b{ color:var(--gold); }
+  .hero {
+    background: var(--black);
+    padding: 156px 0 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 980px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero { padding-top: 124px; padding-bottom: 70px; }
+  }
 
-  .hero-visual{ position:relative; border-radius:6px; overflow:hidden; aspect-ratio:4/4.6; border:1px solid rgba(212,175,55,.35); box-shadow:0 30px 70px -30px rgba(0,0,0,.6); }
-  .hero-visual .frame-inner{ position:absolute; inset:14px; border:1px solid rgba(212,175,55,.3); pointer-events:none; z-index:2; }
-  .hero-visual .scene{ position:absolute; inset:0; background:linear-gradient(160deg,#181818,#0d0d0d 60%); }
-  .hero-visual img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hero h1 {
+    font-size: clamp(34px, 4.4vw, 56px);
+    line-height: 1.15;
+    color: #fff;
+    margin-top: 14px;
+    font-weight: 800;
+  }
+  .hero h1 .accent {
+    color: var(--gold);
+    display: inline;
+  }
+  .hero p.lede {
+    margin-top: 20px;
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 530px;
+  }
+  .hero-ctas {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .reg-badge {
+    margin-top: 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 7px 16px;
+    border-radius: 100px;
+    backdrop-filter: blur(8px);
+  }
+  .reg-badge b { color: var(--gold); }
+  .reg-badge svg { width: 14px; height: 14px; color: var(--gold); }
 
-  /* ---------- Section heads ---------- */
-  .sec-head{ max-width:620px; margin-bottom:52px; }
-  .sec-head h2{ font-size:clamp(28px,3.4vw,42px); margin-top:12px; line-height:1.12; }
-  .sec-head p{ margin-top:14px; color:var(--ink-60); font-size:15.5px; line-height:1.6; }
-  .sec-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
-  .sec-head.center .eyebrow{ justify-content:center; }
-  .sec-pad{ padding:100px 0; }
-  @media (max-width:640px){ .sec-pad{ padding:70px 0; } }
-  .on-dark .sec-head h2{ color:#fff; }
-  .on-dark .sec-head p{ color:rgba(255,255,255,.55); }
+  .hero-visual {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 4 / 4.4;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8);
+    background: var(--black-soft);
+  }
+  .hero-visual .frame-inner {
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    pointer-events: none;
+    z-index: 2;
+    border-radius: var(--radius-sm);
+  }
+  .hero-visual .scene {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #1b1e24, #0c0d0f 70%);
+  }
+  .hero-visual img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease-out);
+  }
+  .hero-visual:hover img {
+    transform: scale(1.02);
+  }
+
+  /* ---------- Section Headers ---------- */
+  .sec-head {
+    max-width: 660px;
+    margin-bottom: 48px;
+  }
+  .sec-head h2 {
+    font-size: clamp(28px, 3.2vw, 42px);
+    margin-top: 10px;
+    line-height: 1.18;
+    font-weight: 800;
+  }
+  .sec-head p {
+    margin-top: 12px;
+    color: var(--text-muted);
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+  .sec-head.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .sec-head.center .eyebrow { justify-content: center; }
+  .sec-pad { padding: 92px 0; }
+  @media (max-width: 640px) { .sec-pad { padding: 64px 0; } }
+
+  .on-dark { background: var(--black); color: #fff; }
+  .on-dark .sec-head h2 { color: #fff; }
+  .on-dark .sec-head p { color: rgba(255, 255, 255, 0.65); }
 
   /* ---------- About ---------- */
-  .about{ background:var(--gray); }
-  .about-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:start; }
-  @media (max-width:900px){ .about-grid{ grid-template-columns:1fr; gap:36px; } }
-  .about-visual{ position:relative; border-radius:6px; overflow:hidden; aspect-ratio:1/1.05; box-shadow:var(--shadow-card); border:1px solid var(--line); }
-  .about-visual .scene{ position:absolute; inset:0; background:linear-gradient(150deg,#1c1c1c,#0d0d0d); }
-  .about-visual img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .about-list{ margin-top:26px; display:grid; grid-template-columns:1fr 1fr; gap:14px 24px; }
-  .about-list li{ display:flex; gap:9px; align-items:flex-start; font-size:14px; color:var(--ink-60); font-weight:600; }
-  .about-list li svg{ flex:none; width:16px; height:16px; color:var(--gold); margin-top:2px; }
-  @media (max-width:520px){ .about-list{ grid-template-columns:1fr; } }
+  .about { background: var(--gray-bg); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+  .about-visual {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 1 / 1.05;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-line);
+    background: #eaecef;
+  }
+  .about-visual .scene {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(150deg, #22252a, #0c0d0f);
+  }
+  .about-visual img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-list {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 20px;
+  }
+  .about-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 14px;
+    color: var(--text-main);
+    font-weight: 600;
+  }
+  .about-list li svg {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    color: var(--gold);
+    margin-top: 2px;
+  }
+  @media (max-width: 520px) { .about-list { grid-template-columns: 1fr; } }
 
-  /* ---------- Why choose ---------- */
-  .why{ background:var(--black); color:#fff; }
-  .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.08); }
-  @media (max-width:900px){ .why-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:520px){ .why-grid{ grid-template-columns:1fr; } }
-  .why-item{ background:var(--black-soft); padding:34px 24px; transition:background .3s; }
-  .why-item:hover{ background:#1c1c1c; }
-  .why-item svg{ width:22px; height:22px; color:var(--gold); }
-  .why-item h4{ font-family:'Cormorant Garamond',serif; font-weight:600; font-size:19px; color:#fff; margin-top:16px; }
-  .why-item p{ margin-top:8px; font-size:12.5px; color:rgba(255,255,255,.5); line-height:1.55; }
+  /* ---------- Why Choose Us ---------- */
+  .why { background: var(--black); color: #fff; }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  @media (max-width: 1024px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } }
+  .why-item {
+    background: var(--black-soft);
+    padding: 32px 24px;
+    transition: background 0.3s;
+  }
+  .why-item:hover { background: #1c1f26; }
+  .why-item svg { width: 24px; height: 24px; color: var(--gold); }
+  .why-item h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 16px;
+    font-weight: 700;
+  }
+  .why-item p {
+    margin-top: 8px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.55;
+  }
 
-  /* ---------- Catalog grids (products/services) ---------- */
-  .cat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
-  @media (max-width:1080px){ .cat-grid{ grid-template-columns:repeat(3,1fr); } }
-  @media (max-width:760px){ .cat-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:480px){ .cat-grid{ grid-template-columns:1fr; } }
-  .p-card{ background:var(--white); border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:transform .4s var(--ease), box-shadow .4s var(--ease); }
-  .p-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-card); }
-  .p-card .thumb{ position:relative; aspect-ratio:1/.8; background:var(--gray); display:flex; align-items:center; justify-content:center; }
-  .p-card .thumb svg{ width:30px; height:30px; color:var(--gold); }
-  .p-card .thumb img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .p-card .body{ padding:18px 18px 22px; }
-  .p-card h4{ font-family:'Cormorant Garamond',serif; font-weight:600; font-size:18px; }
-  .p-card p{ margin-top:6px; font-size:12.5px; color:var(--ink-60); line-height:1.55; }
+  /* ---------- Product Catalog Section ---------- */
+  .products-section {
+    background: #ffffff;
+  }
+  .cat-filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .filter-btn {
+    background: var(--gray-bg);
+    border: 1px solid var(--gray-line);
+    padding: 9px 18px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-muted);
+    transition: all 0.25s var(--ease-out);
+  }
+  .filter-btn:hover {
+    border-color: var(--gold);
+    color: var(--text-main);
+  }
+  .filter-btn.active {
+    background: var(--black);
+    color: #fff;
+    border-color: var(--black);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
 
-  /* Chemicals: compact chips */
-  .chem-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-  @media (max-width:900px){ .chem-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:520px){ .chem-grid{ grid-template-columns:1fr; } }
-  .chem-card{ display:flex; gap:14px; align-items:flex-start; background:var(--white); border:1px solid var(--line); border-radius:8px; padding:16px 18px; }
-  .chem-card .dot{ width:34px; height:34px; border-radius:50%; background:var(--gray); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex:none; }
-  .chem-card .dot svg{ width:15px; height:15px; color:var(--gold); }
-  .chem-card h5{ font-size:14.5px; font-weight:800; }
-  .chem-card p{ margin-top:3px; font-size:12px; color:var(--ink-60); line-height:1.5; }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 980px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .products-grid { grid-template-columns: 1fr; } }
+
+  .prod-card {
+    background: var(--white);
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out), border-color 0.4s;
+    box-shadow: var(--shadow-sm);
+  }
+  .prod-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(212, 175, 55, 0.35);
+  }
+
+  .prod-thumb {
+    position: relative;
+    aspect-ratio: 16 / 11;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .prod-thumb svg.fallback-icon {
+    width: 44px;
+    height: 44px;
+    color: var(--gold);
+    opacity: 0.8;
+  }
+  .prod-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s var(--ease-out);
+  }
+  .prod-card:hover .prod-thumb img {
+    transform: scale(1.04);
+  }
+  .prod-cat-pill {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(12, 13, 15, 0.8);
+    backdrop-filter: blur(8px);
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    z-index: 2;
+  }
+
+  .prod-body {
+    padding: 20px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .prod-head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .prod-card h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+  .prod-price {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .prod-desc {
+    margin-top: 6px;
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    flex: 1;
+  }
+  .prod-foot {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .prod-order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
+    padding: 10px 14px;
+    background: #128c7e;
+    color: #fff;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    transition: background 0.25s, transform 0.25s;
+  }
+  .prod-order-btn:hover {
+    background: #075e54;
+    transform: translateY(-1px);
+  }
+  .prod-order-btn svg { width: 15px; height: 15px; }
+
+  /* ---------- Chemicals Grid ---------- */
+  .chem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 900px) { .chem-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .chem-grid { grid-template-columns: 1fr; } }
+  .chem-card {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--white);
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s var(--ease-out), border-color 0.3s;
+  }
+  .chem-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(212, 175, 55, 0.4);
+  }
+  .chem-card .dot {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: var(--gold-light);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  .chem-card .dot svg { width: 18px; height: 18px; color: var(--gold); }
+  .chem-card h5 { font-size: 15.5px; font-weight: 700; color: var(--text-main); }
+  .chem-card p { margin-top: 4px; font-size: 12.5px; color: var(--text-muted); line-height: 1.5; }
+
+  /* ---------- Services Grid ---------- */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 980px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
+  .svc-card {
+    background: var(--white);
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.35s var(--ease-out), box-shadow 0.35s;
+  }
+  .svc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(212, 175, 55, 0.3);
+  }
+  .svc-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .svc-thumb svg { width: 32px; height: 32px; color: var(--gold); }
+  .svc-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .svc-body { padding: 20px; }
+  .svc-card h4 { font-size: 18px; font-weight: 700; }
+  .svc-card p { margin-top: 6px; font-size: 13.5px; color: var(--text-muted); line-height: 1.55; }
 
   /* ---------- Gallery ---------- */
-  .gallery{ background:var(--gray); }
-  .masonry{ column-count:3; column-gap:18px; }
-  @media (max-width:900px){ .masonry{ column-count:2; } }
-  @media (max-width:560px){ .masonry{ column-count:1; } }
-  .g-card{ break-inside:avoid; margin-bottom:18px; border-radius:6px; overflow:hidden; position:relative; box-shadow:var(--shadow-card); }
-  .g-card .thumb{ position:relative; width:100%; }
-  .g-card .thumb svg{ width:100%; display:block; }
-  .g-card .thumb img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .g-card .overlay{ position:absolute; inset:0; background:linear-gradient(0deg, rgba(13,13,13,.9), transparent 55%); display:flex; align-items:flex-end; padding:20px; }
-  .g-card .cap span{ font-size:10.5px; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); font-weight:800; }
-  .g-card .cap h4{ font-family:'Cormorant Garamond',serif; color:#fff; font-size:19px; font-weight:600; margin-top:5px; }
+  .gallery { background: var(--gray-bg); }
+  .masonry { column-count: 3; column-gap: 20px; }
+  @media (max-width: 900px) { .masonry { column-count: 2; } }
+  @media (max-width: 560px) { .masonry { column-count: 1; } }
+  .g-card {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-md);
+    background: var(--black-soft);
+  }
+  .g-card .thumb { position: relative; width: 100%; overflow: hidden; }
+  .g-card .thumb img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s var(--ease-out);
+  }
+  .g-card:hover .thumb img { transform: scale(1.04); }
+  .g-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(12, 13, 15, 0.95), transparent 60%);
+    display: flex;
+    align-items: flex-end;
+    padding: 22px;
+  }
+  .g-card .cap span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+  }
+  .g-card .cap h4 {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
 
   /* ---------- Testimonials ---------- */
-  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  @media (max-width:900px){ .testi-grid{ grid-template-columns:1fr; } }
-  .testi-card{ background:var(--gray); border-radius:8px; padding:30px 26px; border:1px solid var(--line); }
-  .testi-stars{ color:var(--gold); font-size:14px; letter-spacing:2px; }
-  .testi-quote{ margin-top:14px; font-size:14.5px; color:var(--ink); line-height:1.65; font-style:italic; }
-  .testi-who{ margin-top:18px; display:flex; justify-content:space-between; align-items:center; }
-  .testi-who b{ font-size:13.5px; }
-  .testi-who span{ font-size:11.5px; color:var(--ink-40); }
-  .google-badge{ margin-top:44px; display:flex; justify-content:center; }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 800px) { .testi-grid { grid-template-columns: 1fr; } }
+  .testi-card {
+    background: var(--gray-bg);
+    border-radius: var(--radius-md);
+    padding: 32px 28px;
+    border: 1px solid var(--gray-line);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .testi-stars {
+    color: var(--gold);
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .testi-quote {
+    margin-top: 14px;
+    font-size: 14.5px;
+    color: var(--text-main);
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .testi-who {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--gray-line);
+    padding-top: 14px;
+  }
+  .testi-who b { font-size: 14px; font-weight: 700; }
+  .testi-who span { font-size: 12px; color: var(--text-sub); }
+  .google-badge {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
 
-  /* ---------- CTA band ---------- */
-  .cta-band{ background:var(--black); color:#fff; border:1px solid rgba(212,175,55,.25); padding:64px 50px; margin:0 32px; position:relative; }
-  @media (max-width:640px){ .cta-band{ padding:44px 26px; margin:0 20px; } }
-  .cta-inner{ display:flex; align-items:center; justify-content:space-between; gap:36px; flex-wrap:wrap; }
-  .cta-inner h2{ color:#fff; font-size:clamp(26px,3.2vw,38px); max-width:520px; }
-  .cta-inner p{ margin-top:10px; color:rgba(255,255,255,.55); font-size:14.5px; max-width:440px; }
+  /* ---------- CTA Banner ---------- */
+  .cta-band {
+    background: var(--black);
+    color: #fff;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: var(--radius-lg);
+    padding: 60px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  @media (max-width: 640px) { .cta-band { padding: 40px 24px; } }
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+  .cta-inner h2 {
+    color: #fff;
+    font-size: clamp(26px, 3.2vw, 38px);
+    max-width: 540px;
+  }
+  .cta-inner p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    max-width: 460px;
+  }
 
   /* ---------- FAQ ---------- */
-  .faq-list{ max-width:800px; }
-  .faq-item{ border-bottom:1px solid var(--line); }
-  .faq-q{ width:100%; background:none; border:none; text-align:left; padding:24px 0; display:flex; justify-content:space-between; align-items:center; gap:20px; font-size:16px; font-weight:700; color:var(--ink); }
-  .faq-q .plus{ width:24px; height:24px; border-radius:50%; border:1px solid var(--line); flex:none; position:relative; transition:transform .4s var(--ease), border-color .3s; }
-  .faq-q .plus::before,.faq-q .plus::after{ content:''; position:absolute; background:var(--gold); top:50%; left:50%; transform:translate(-50%,-50%); }
-  .faq-q .plus::before{ width:9px; height:1.4px; }
-  .faq-q .plus::after{ width:1.4px; height:9px; transition:opacity .3s; }
-  .faq-item.open .plus{ transform:rotate(90deg); border-color:var(--gold); }
-  .faq-item.open .plus::after{ opacity:0; }
-  .faq-a{ max-height:0; overflow:hidden; transition:max-height .45s var(--ease); }
-  .faq-a p{ padding-bottom:24px; color:var(--ink-60); font-size:14px; line-height:1.7; max-width:660px; }
+  .faq-list { max-width: 840px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid var(--gray-line); }
+  .faq-q {
+    width: 100%;
+    background: none;
+    text-align: left;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 16.5px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+  }
+  .faq-q .plus {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-line);
+    flex: none;
+    position: relative;
+    transition: transform 0.35s var(--ease-out), border-color 0.3s;
+  }
+  .faq-q .plus::before, .faq-q .plus::after {
+    content: '';
+    position: absolute;
+    background: var(--gold);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .faq-q .plus::before { width: 10px; height: 1.6px; }
+  .faq-q .plus::after { width: 1.6px; height: 10px; transition: opacity 0.3s; }
+  .faq-item.open .plus { transform: rotate(90deg); border-color: var(--gold); }
+  .faq-item.open .plus::after { opacity: 0; }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-out);
+  }
+  .faq-a p {
+    padding-bottom: 22px;
+    color: var(--text-muted);
+    font-size: 14.5px;
+    line-height: 1.7;
+    max-width: 720px;
+  }
 
   /* ---------- Contact ---------- */
-  .contact-grid{ display:grid; grid-template-columns:1fr 1.05fr; gap:56px; }
-  @media (max-width:960px){ .contact-grid{ grid-template-columns:1fr; } }
-  .info-card{ background:var(--black); color:#fff; border-radius:8px; padding:36px 30px; margin-bottom:16px; }
-  .info-card h3{ color:#fff; font-size:21px; }
-  .info-row{ display:flex; gap:14px; align-items:flex-start; padding:15px 0; border-top:1px solid rgba(255,255,255,.1); }
-  .info-row:first-of-type{ border-top:none; margin-top:18px; }
-  .info-row svg{ width:18px; height:18px; color:var(--gold); flex:none; margin-top:2px; }
-  .info-row b{ display:block; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:rgba(255,255,255,.5); font-weight:700; margin-bottom:3px; }
-  .info-row span{ font-size:14px; }
-  .map-box{ border-radius:8px; overflow:hidden; height:210px; position:relative; background:linear-gradient(160deg,#e9e9e9,#d8d8d8); border:1px solid var(--line); }
-  .map-box svg{ position:absolute; inset:0; width:100%; height:100%; }
-  .map-pin{ position:absolute; left:50%; top:44%; width:32px; height:32px; border-radius:50% 50% 50% 0; background:var(--gold); transform:rotate(-45deg) translate(-50%,-50%); box-shadow:0 8px 16px -6px rgba(0,0,0,.3); }
-  .map-directions{ position:absolute; bottom:14px; right:14px; z-index:2; }
-  .social-row{ display:flex; gap:10px; margin-top:16px; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 52px;
+  }
+  @media (max-width: 960px) { .contact-grid { grid-template-columns: 1fr; } }
+  .info-card {
+    background: var(--black);
+    color: #fff;
+    border-radius: var(--radius-md);
+    padding: 36px 30px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .info-card h3 { color: #fff; font-size: 22px; margin-bottom: 4px; }
+  .info-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .info-row:first-of-type { border-top: none; margin-top: 16px; }
+  .info-row svg {
+    width: 20px;
+    height: 20px;
+    color: var(--gold);
+    flex: none;
+    margin-top: 2px;
+  }
+  .info-row b {
+    display: block;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 2px;
+  }
+  .info-row span { font-size: 14px; color: #fff; }
+  .social-row { display: flex; gap: 10px; margin-top: 18px; }
 
-  .form-card{ background:var(--white); border-radius:8px; padding:36px; border:1px solid var(--line); }
-  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-  @media (max-width:520px){ .form-row{ grid-template-columns:1fr; } }
-  .field{ margin-bottom:14px; }
-  .field label{ font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-40); margin-bottom:7px; display:block; }
-  .field input, .field select, .field textarea{ width:100%; border:1px solid var(--line); border-radius:5px; padding:13px 14px; font-family:inherit; font-size:14px; background:var(--white); color:var(--ink); transition:border-color .3s; }
-  .field input:focus, .field select:focus, .field textarea:focus{ outline:none; border-color:var(--gold); }
-  .field textarea{ resize:vertical; min-height:100px; }
-  .form-note{ font-size:12px; color:var(--ink-40); margin-top:12px; line-height:1.6; }
-  .wa-fallback{ margin-top:14px; display:flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; color:var(--ink); }
-  .wa-fallback svg{ width:16px; height:16px; color:#1fa855; }
-  .form-toast{ margin-top:14px; background:var(--gray); border-radius:6px; padding:12px 14px; font-size:12.5px; color:var(--ink-60); display:none; }
-  .form-toast.show{ display:block; }
+  .map-box {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    height: 210px;
+    position: relative;
+    background: linear-gradient(160deg, #e9e9e9, #d8d8d8);
+    border: 1px solid var(--gray-line);
+  }
+  .map-box svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .map-pin {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50% 50% 50% 0;
+    background: var(--gold);
+    transform: rotate(-45deg) translate(-50%, -50%);
+    box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.35);
+  }
+  .map-directions { position: absolute; bottom: 14px; right: 14px; z-index: 2; }
+
+  .form-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 36px;
+    border: 1px solid var(--gray-line);
+    box-shadow: var(--shadow-sm);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
+  .field { margin-bottom: 14px; }
+  .field label {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-sub);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .field input, .field select, .field textarea {
+    width: 100%;
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    background: var(--white);
+    color: var(--text-main);
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-light);
+  }
+  .field textarea { resize: vertical; min-height: 100px; }
+  .wa-fallback {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #128c7e;
+  }
+  .wa-fallback svg { width: 17px; height: 17px; flex: none; }
+  .form-toast {
+    margin-top: 14px;
+    background: var(--gray-bg);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 13px;
+    color: var(--text-muted);
+    display: none;
+    border-left: 3px solid var(--gold);
+  }
+  .form-toast.show { display: block; }
 
   /* ---------- Footer ---------- */
-  footer{ background:var(--black); color:rgba(255,255,255,.6); padding:70px 0 28px; }
-  .foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:46px; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,.1); }
-  @media (max-width:900px){ .foot-grid{ grid-template-columns:1fr 1fr; row-gap:36px; } }
-  @media (max-width:560px){ .foot-grid{ grid-template-columns:1fr; } }
-  .foot-grid h5{ color:#fff; font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; font-weight:800; margin-bottom:18px; }
-  .foot-grid li{ margin-bottom:11px; font-size:13.5px; }
-  .foot-grid li a:hover{ color:var(--gold); }
-  .foot-logo{ display:flex; align-items:center; gap:11px; font-family:'Cormorant Garamond',serif; font-size:21px; color:#fff; margin-bottom:14px; }
-  .foot-sub{ font-size:13.5px; line-height:1.7; max-width:280px; margin-bottom:18px; }
-  .foot-social{ display:flex; gap:10px; }
-  .foot-social a{ width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,255,255,.18); display:flex; align-items:center; justify-content:center; transition:border-color .3s; }
-  .foot-social a:hover{ border-color:var(--gold); }
-  .foot-social svg{ width:14px; height:14px; }
-  .foot-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:26px; font-size:12px; flex-wrap:wrap; gap:12px; }
+  footer {
+    background: var(--black);
+    color: rgba(255, 255, 255, 0.65);
+    padding: 72px 0 32px;
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  @media (max-width: 900px) { .foot-grid { grid-template-columns: 1fr 1fr; row-gap: 36px; } }
+  @media (max-width: 560px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-grid h5 {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    margin-bottom: 18px;
+  }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; }
+  .foot-grid li { margin-bottom: 10px; font-size: 14px; }
+  .foot-grid li a:hover { color: var(--gold); }
+  .foot-logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .foot-sub {
+    font-size: 13.5px;
+    line-height: 1.7;
+    max-width: 300px;
+    margin-bottom: 18px;
+  }
+  .foot-social { display: flex; gap: 10px; }
+  .foot-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: #fff;
+  }
+  .foot-social a:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .foot-social svg { width: 15px; height: 15px; }
+
+  .foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    font-size: 12.5px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .foot-admin-link {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .foot-admin-link:hover { color: var(--gold); }
 
   /* ---------- Floating WhatsApp ---------- */
-  .wa-float{ position:fixed; bottom:26px; right:26px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 14px 30px -10px rgba(31,168,85,.55); }
-  .wa-float svg{ width:26px; height:26px; color:#fff; }
+  .wa-float {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 150;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 14px 30px -8px rgba(37, 211, 102, 0.6);
+    transition: transform 0.3s var(--ease-out);
+    animation: wa-pulse 2.8s infinite;
+  }
+  .wa-float:hover {
+    transform: scale(1.08) translateY(-2px);
+  }
+  .wa-float svg { width: 28px; height: 28px; color: #fff; }
 
-  /* ---------- Admin ---------- */
-  .admin-launcher{ position:fixed; bottom:26px; left:26px; z-index:150; display:none; align-items:center; gap:9px; padding:12px 18px 12px 14px; background:var(--black); color:#fff; border-radius:100px; border:1px solid var(--gold); font-size:12.5px; font-weight:700; box-shadow:0 14px 30px -12px rgba(0,0,0,.5); }
-  .admin-launcher svg{ width:16px; height:16px; color:var(--gold); }
-  .foot-logo{ cursor:default; user-select:none; -webkit-tap-highlight-color:transparent; }
-  .admin-scrim{ position:fixed; inset:0; background:rgba(13,13,13,.6); z-index:490; opacity:0; pointer-events:none; transition:opacity .4s; }
-  .admin-scrim.open{ opacity:1; pointer-events:auto; }
-  .admin-drawer{ position:fixed; top:0; right:0; bottom:0; width:min(520px,100%); z-index:500; background:var(--white); box-shadow:-20px 0 50px -20px rgba(0,0,0,.4); transform:translateX(100%); transition:transform .5s var(--ease); display:flex; flex-direction:column; }
-  .admin-drawer.open{ transform:translateX(0); }
-  .admin-head{ padding:24px 24px 0; flex:none; }
-  .admin-head-row{ display:flex; justify-content:space-between; align-items:flex-start; }
-  .admin-head h3{ font-size:22px; }
-  .admin-head p{ color:var(--ink-60); font-size:12.5px; margin-top:4px; }
-  .admin-tabs{ display:flex; gap:2px; margin:18px 0 0; border-bottom:1px solid var(--line); overflow-x:auto; }
-  .admin-tab{ background:none; border:none; padding:11px 4px; margin-right:16px; font-size:12.5px; font-weight:700; color:var(--ink-40); border-bottom:2px solid transparent; white-space:nowrap; }
-  .admin-tab.active{ color:var(--black); border-color:var(--gold); }
-  .admin-body{ flex:1; overflow-y:auto; padding:20px 24px 100px; }
-  .admin-panel{ display:none; }
-  .admin-panel.active{ display:block; }
-  .admin-field{ margin-bottom:14px; }
-  .admin-field label{ font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-40); display:block; margin-bottom:5px; }
-  .admin-field input, .admin-field textarea{ width:100%; border:1px solid var(--line); border-radius:5px; padding:10px 12px; font-family:inherit; font-size:13px; background:var(--gray); }
-  .admin-field textarea{ min-height:60px; resize:vertical; }
-  .admin-field input:focus, .admin-field textarea:focus{ outline:none; border-color:var(--gold); }
-  .upload-row{ display:flex; align-items:center; gap:10px; margin-top:8px; }
-  .upload-btn{ position:relative; overflow:hidden; display:inline-flex; align-items:center; justify-content:center; background:var(--white); border:1px dashed var(--line); border-radius:5px; padding:9px 12px; font-size:11.5px; font-weight:700; color:var(--ink-60); cursor:pointer; white-space:nowrap; }
-  .upload-btn:hover{ border-color:var(--gold); color:var(--black); }
-  .upload-input{ position:absolute; inset:0; opacity:0; cursor:pointer; width:100%; }
-  .upload-thumb{ width:36px; height:36px; border-radius:5px; object-fit:cover; display:none; border:1px solid var(--line); }
-  .upload-thumb.show{ display:block; }
-  .upload-status{ font-size:10.5px; color:var(--ink-40); margin-left:2px; }
-  .size-meter{ font-size:11px; color:var(--ink-40); padding:8px 0; text-align:right; }
-  .size-meter.warn{ color:#b23; font-weight:700; }
-  .admin-group-label{ font-size:11px; font-weight:800; color:var(--black); text-transform:uppercase; letter-spacing:.05em; margin:20px 0 10px; padding-top:12px; border-top:1px solid var(--line); }
-  .admin-group-label:first-child{ margin-top:0; padding-top:0; border-top:none; }
-  .admin-foot{ position:sticky; bottom:0; background:var(--white); border-top:1px solid var(--line); padding:14px 24px; display:flex; gap:10px; }
-  .admin-foot .btn{ flex:1; padding:12px; font-size:12.5px; }
-  .admin-toast{ position:fixed; bottom:96px; left:26px; z-index:600; background:var(--black); color:#fff; border:1px solid var(--gold); padding:12px 20px; border-radius:6px; font-size:13px; font-weight:600; transform:translateY(12px); opacity:0; transition:all .35s var(--ease); pointer-events:none; }
-  .admin-toast.show{ transform:translateY(0); opacity:1; }
-  .admin-note{ font-size:11.5px; color:var(--ink-40); line-height:1.6; background:var(--gray); border-radius:6px; padding:11px 13px; margin-bottom:16px; }
+  @keyframes wa-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+    70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
 
-  .item-card{ border:1px solid var(--line); border-radius:8px; padding:14px; margin-bottom:12px; background:var(--gray); }
-  .item-card-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
-  .item-card-head span{ font-size:11px; font-weight:800; color:var(--ink-40); text-transform:uppercase; letter-spacing:.04em; }
-  .item-del{ width:26px; height:26px; border-radius:50%; border:1px solid var(--line); background:var(--white); display:flex; align-items:center; justify-content:center; }
-  .item-del svg{ width:12px; height:12px; }
-  .add-item-btn{ width:100%; border:1.5px dashed var(--line); border-radius:8px; background:none; padding:14px; font-size:12.5px; font-weight:800; color:var(--ink-60); text-transform:uppercase; letter-spacing:.04em; }
-  .add-item-btn:hover{ border-color:var(--gold); color:var(--black); }
+  /* ---------- Admin Drawer & Gate ---------- */
+  .admin-launcher {
+    position: fixed;
+    bottom: 26px;
+    left: 26px;
+    z-index: 150;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--black);
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid var(--gold);
+    font-size: 12.5px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+  }
+  .admin-launcher svg { width: 16px; height: 16px; color: var(--gold); }
 
-  /* ---------- Gate ---------- */
-  .admin-gate{ display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:60px 10px; height:100%; }
-  .admin-gate svg{ width:36px; height:36px; color:var(--gold); margin-bottom:18px; }
-  .admin-gate h4{ font-family:'Cormorant Garamond',serif; font-size:22px; margin-bottom:8px; }
-  .admin-gate p{ font-size:13px; color:var(--ink-60); margin-bottom:22px; max-width:280px; }
-  .admin-gate input{ width:100%; max-width:240px; text-align:center; border:1px solid var(--line); border-radius:5px; padding:12px 14px; font-size:14px; margin-bottom:10px; letter-spacing:.1em; }
-  .admin-gate input:focus{ outline:none; border-color:var(--gold); }
-  .gate-error{ font-size:12px; color:#b23; min-height:18px; margin-bottom:8px; }
+  .admin-scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(12, 13, 15, 0.65);
+    backdrop-filter: blur(4px);
+    z-index: 490;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+  }
+  .admin-scrim.open { opacity: 1; pointer-events: auto; }
 
-  ::selection{ background:var(--gold-soft); color:var(--black); }
-  :focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .admin-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(580px, 100%);
+    z-index: 500;
+    background: var(--white);
+    box-shadow: -20px 0 60px rgba(0, 0, 0, 0.35);
+    transform: translateX(100%);
+    transition: transform 0.45s var(--ease-out);
+    display: flex;
+    flex-direction: column;
+  }
+  .admin-drawer.open { transform: translateX(0); }
+
+  .admin-head {
+    padding: 24px 24px 0;
+    flex: none;
+    border-bottom: 1px solid var(--gray-line);
+    background: #fff;
+  }
+  .admin-head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .admin-head h3 { font-size: 22px; font-weight: 800; }
+  .admin-head p { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
+
+  .admin-tabs {
+    display: flex;
+    gap: 2px;
+    margin: 16px 0 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .admin-tab {
+    background: none;
+    border: none;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-sub);
+    border-bottom: 2.5px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .admin-tab:hover { color: var(--text-main); }
+  .admin-tab.active {
+    color: var(--black);
+    border-color: var(--gold);
+  }
+
+  .admin-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px 24px 80px;
+  }
+  .admin-panel { display: none; }
+  .admin-panel.active { display: block; }
+
+  .admin-field { margin-bottom: 14px; }
+  .admin-field label {
+    font-size: 11px;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-sub);
+    display: block;
+    margin-bottom: 5px;
+  }
+  .admin-field input, .admin-field textarea, .admin-field select {
+    width: 100%;
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 13.5px;
+    background: var(--gray-bg);
+    color: var(--text-main);
+  }
+  .admin-field textarea { min-height: 64px; resize: vertical; }
+  .admin-field input:focus, .admin-field textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: #fff;
+  }
+
+  .upload-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .upload-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: 1px dashed var(--gray-line);
+    border-radius: var(--radius-sm);
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .upload-btn:hover { border-color: var(--gold); color: var(--text-main); }
+  .upload-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
+  .upload-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    display: none;
+    border: 1px solid var(--gray-line);
+  }
+  .upload-thumb.show { display: block; }
+  .upload-status { font-size: 11px; color: var(--text-sub); }
+
+  .size-meter {
+    font-size: 12px;
+    color: var(--text-sub);
+    padding: 4px 0;
+    text-align: right;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+  }
+  .size-meter.warn { color: #d9383a; font-weight: 800; }
+
+  .admin-group-label {
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 24px 0 12px;
+    padding-top: 14px;
+    border-top: 1px solid var(--gray-line);
+  }
+  .admin-group-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+  .admin-foot {
+    position: sticky;
+    bottom: 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray-line);
+    padding: 14px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05);
+  }
+  .admin-foot .btn { padding: 12px; font-size: 13.5px; }
+
+  .admin-toast {
+    position: fixed;
+    bottom: 96px;
+    left: 26px;
+    z-index: 600;
+    background: var(--black);
+    color: #fff;
+    border: 1px solid var(--gold);
+    padding: 12px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    font-weight: 600;
+    transform: translateY(16px);
+    opacity: 0;
+    transition: all 0.35s var(--ease-out);
+    pointer-events: none;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  }
+  .admin-toast.show { transform: translateY(0); opacity: 1; }
+
+  .admin-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    background: var(--gray-bg);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid var(--gold);
+  }
+
+  .item-card {
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    margin-bottom: 14px;
+    background: var(--gray-bg);
+  }
+  .item-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--gray-line);
+  }
+  .item-card-head span {
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .item-del {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-line);
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d9383a;
+    transition: all 0.2s;
+  }
+  .item-del:hover { background: #d9383a; color: #fff; }
+  .item-del svg { width: 14px; height: 14px; }
+
+  .add-item-btn {
+    width: 100%;
+    border: 1.5px dashed var(--gray-line);
+    border-radius: var(--radius-md);
+    background: none;
+    padding: 14px;
+    font-size: 13px;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.25s;
+  }
+  .add-item-btn:hover {
+    border-color: var(--gold);
+    color: var(--black);
+    background: var(--gold-light);
+  }
+
+  /* Admin Passcode Gate */
+  .admin-gate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 16px;
+    height: 100%;
+  }
+  .admin-gate svg { width: 40px; height: 40px; color: var(--gold); margin-bottom: 16px; }
+  .admin-gate h4 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
+  .admin-gate p { font-size: 13.5px; color: var(--text-muted); margin-bottom: 22px; max-width: 280px; }
+  .admin-gate input {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0.12em;
+    font-family: inherit;
+  }
+  .admin-gate input:focus { outline: none; border-color: var(--gold); }
+  .gate-error { font-size: 12.5px; color: #d9383a; min-height: 20px; margin-bottom: 8px; font-weight: 600; }
+
+  /* Keepalive status card */
+  .keepalive-card {
+    background: #eef7f0;
+    border: 1px solid #c2e5ca;
+    border-radius: var(--radius-md);
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+  .keepalive-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #1a7431;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .keepalive-badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1a7431;
+  }
+
+  ::selection { background: rgba(212, 175, 55, 0.35); color: #000; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 </style>
 </head>
 <body>
 
+<!-- ============ HEADER ============ -->
 <header id="siteHeader">
   <div class="nav-inner">
-    <a href="#home" class="logo"><span class="logo-mark" id="logoMarkHeader"></span>Lavish <b>Exclusive</b></a>
+    <a href="#home" class="logo">
+      <span class="logo-mark" id="logoMarkHeader"></span>
+      <div>
+        <span>Lavish <b>Exclusive</b> Chemical</span>
+        <span class="logo-sub">Premium Paints &amp; Industrial Additives</span>
+      </div>
+    </a>
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#products">Products</a>
+      <a href="#products">Products &amp; Pricing</a>
+      <a href="#chemicals">Chemicals</a>
       <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a href="#" class="btn btn-gold js-quote-link" id="openQuoteTop" target="_blank" rel="noopener" style="padding:11px 20px;">Request a Quote</a>
-      <button class="icon-btn burger" id="burgerBtn" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <a href="#" class="btn btn-gold js-quote-link" id="openQuoteTop" target="_blank" rel="noopener" style="padding:10px 20px; font-size:13px;">Request a Quote</a>
+      <button class="icon-btn burger" id="burgerBtn" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </div>
 </header>
 
+<!-- Mobile Slide-out Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="top">
-    <span class="logo" style="color:#fff;"><span class="logo-mark" id="logoMarkMobile"></span>Lavish Exclusive</span>
-    <button class="icon-btn" id="closeBurger"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <span class="logo" style="color:#fff;">
+      <span class="logo-mark" id="logoMarkMobile"></span>
+      <span>Lavish Exclusive Chemical</span>
+    </span>
+    <button class="icon-btn" id="closeBurger" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </div>
+  <a href="#home" class="mm-link">Home</a>
   <a href="#about" class="mm-link">About</a>
-  <a href="#products" class="mm-link">Products</a>
+  <a href="#products" class="mm-link">Products &amp; Pricing</a>
+  <a href="#chemicals" class="mm-link">Chemicals &amp; Additives</a>
   <a href="#services" class="mm-link">Services</a>
-  <a href="#gallery" class="mm-link">Gallery</a>
-  <a href="#reviews" class="mm-link">Reviews</a>
+  <a href="#gallery" class="mm-link">Featured Projects</a>
+  <a href="#reviews" class="mm-link">Customer Reviews</a>
   <a href="#contact" class="mm-link">Contact</a>
   <div class="cta-row">
-    <a href="#" class="btn btn-gold js-quote-link" id="openQuoteMobile" target="_blank" rel="noopener">Request a Quote</a>
+    <a href="#" class="btn btn-gold js-quote-link" id="openQuoteMobile" target="_blank" rel="noopener">Chat on WhatsApp</a>
   </div>
 </div>
 
@@ -348,14 +1613,20 @@
 <section class="hero" id="home">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow reveal">Luxury Meets Innovation</span>
-      <h1 class="reveal" style="margin-top:16px;" id="heroHeadline">Luxury Paints. Beautiful Interiors. <span class="accent">Exceptional Finishes.</span></h1>
+      <span class="eyebrow reveal">Luxury Meets Innovation &middot; Nigeria</span>
+      <h1 class="reveal" id="heroHeadline">Luxury Paints. High-Grade Chemicals. <span class="accent">Exceptional Finishes.</span></h1>
       <p class="lede reveal" id="heroSubtext">Manufacturers of premium decorative and protective paints, industrial paint chemicals, and professional interior finishing solutions for homes, offices, and commercial properties.</p>
       <div class="hero-ctas reveal">
-        <a href="#" class="btn btn-gold js-quote-link" id="openQuoteHero" target="_blank" rel="noopener">Request a Quote</a>
-        <a href="#services" class="btn btn-outline">View Our Services</a>
+        <a href="#" class="btn btn-gold js-quote-link" id="openQuoteHero" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>
+          Request Factory Quote
+        </a>
+        <a href="#products" class="btn btn-outline">Explore Products &amp; Prices</a>
       </div>
-      <div class="reg-badge reveal">Registered Business &middot; <b id="regNumber">RN: 9043776</b></div>
+      <div class="reg-badge reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+        Registered Business &middot; <b id="regNumber">RN: 9043776</b>
+      </div>
     </div>
     <div class="hero-visual reveal" id="heroVisualImg">
       <div class="scene"></div>
@@ -372,14 +1643,14 @@
     </div>
     <div class="reveal">
       <span class="eyebrow">Who We Are</span>
-      <h2 style="margin-top:14px;" id="aboutHeading">A trusted Nigerian name in premium paints and interior finishing.</h2>
-      <p style="margin-top:20px; font-size:18px; font-family:'Cormorant Garamond',serif; color:var(--ink);" id="aboutLede">Lavish Exclusive Chemical &amp; Interior Concept (LEC) specializes in the production and supply of premium decorative and protective paints, industrial paint chemicals, and complete building finishing solutions.</p>
-      <p style="margin-top:18px; color:var(--ink-60); line-height:1.75; font-size:15px;" id="aboutBody">We combine innovation, craftsmanship, and premium-quality materials to deliver exceptional results for residential, commercial, and industrial projects. Beyond paint manufacturing, LEC also provides professional interior design, renovation, property finishing, and space transformation services tailored to each client's vision.</p>
+      <h2 style="margin-top:12px;" id="aboutHeading">A trusted Nigerian manufacturer in premium paints and interior finishing.</h2>
+      <p style="margin-top:18px; font-size:16px; font-weight:600; color:var(--text-main);" id="aboutLede">Lavish Exclusive Chemical (LEC) specializes in the production and supply of premium decorative and protective paints, industrial paint chemicals, and complete building finishing solutions.</p>
+      <p style="margin-top:16px; color:var(--text-muted); line-height:1.75; font-size:14.5px;" id="aboutBody">We combine innovation, craftsmanship, and premium-quality materials to deliver exceptional results for residential, commercial, and industrial projects. Beyond paint manufacturing, LEC also provides professional interior design, renovation, property finishing, and space transformation services tailored to each client's vision.</p>
       <ul class="about-list">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Premium decorative &amp; protective paints</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Industrial paint chemicals</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Interior design &amp; styling</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Building &amp; property finishing</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Factory-direct premium paints</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Industrial raw paint chemicals</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Interior design &amp; 3D styling</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Complete building finishing</li>
       </ul>
     </div>
   </div>
@@ -389,41 +1660,83 @@
 <section class="why sec-pad on-dark" id="why">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="eyebrow">The LEC Standard</span>
-      <h2>Why Choose Us</h2>
+      <span class="eyebrow">The LEC Advantage</span>
+      <h2>Why Clients Choose Lavish Exclusive Chemical</h2>
+      <p>Built with durability, high pigment saturation, and genuine industrial-grade chemistry to withstand Nigeria's climate.</p>
     </div>
     <div class="why-grid reveal">
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><h4>Premium Quality Products</h4><p>Only trusted-grade paints and materials leave our production line.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M6 21V9l6-6 6 6v12M10 21v-6h4v6"/></svg><h4>Professional Interior Solutions</h4><p>End-to-end design and styling handled by an experienced team.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c3 6 7 8 7 13a7 7 0 1 1-14 0c0-5 4-7 7-13Z"/></svg><h4>Durable Paint Finishes</h4><p>Formulated to withstand Nigeria's climate and daily wear.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 13l4 4L19 7"/></svg><h4>Reliable Service Delivery</h4><p>Projects run on the timeline we agree with you, every time.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><h4>Experienced Team</h4><p>Skilled formulators, painters and designers behind every job.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg><h4>Customer Satisfaction</h4><p>We follow up after delivery to confirm you're genuinely happy.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg><h4>Innovative Designs</h4><p>Fresh interior concepts built around how you actually live.</p></div>
-      <div class="why-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><h4>Affordable Pricing</h4><p>Premium results with transparent, itemised quotations.</p></div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+        <h4>Premium Quality Formulations</h4>
+        <p>Only certified chemicals, pure acrylic binders, and high-opacity titanium leave our production facility.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M6 21V9l6-6 6 6v12M10 21v-6h4v6"/></svg>
+        <h4>Direct Factory Pricing</h4>
+        <p>Buy straight from the manufacturer with no middleman markups. Competitive wholesale and retail rates.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2c3 6 7 8 7 13a7 7 0 1 1-14 0c0-5 4-7 7-13Z"/></svg>
+        <h4>Weather &amp; Mould Resistant</h4>
+        <p>Formulated with anti-fungi biocides and waterproofing resins that prevent peelings, algae, and damp.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7"/></svg>
+        <h4>Nationwide Delivery &amp; Timing</h4>
+        <p>Reliable dispatch across Lagos, Ogun, Abuja, Port Harcourt and across Nigeria on guaranteed schedules.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        <h4>Experienced Master Artisans</h4>
+        <p>Skilled screeders, marble plasterers, and paint technologists who treat every project with precision.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        <h4>Genuine Customer Care</h4>
+        <p>We provide after-sales color consultation and application support to ensure total satisfaction.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+        <h4>Custom Color Tinting</h4>
+        <p>Bring any swatch or shade code; we produce perfect bespoke matches for your interior and facade.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h4>Transparent Quotes</h4>
+        <p>Clear, itemized billings for materials and labor with zero hidden fees. Reliable contractor discounts.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PRODUCTS ============ -->
-<section class="sec-pad" id="products">
+<!-- ============ PRODUCTS & PRICING ============ -->
+<section class="sec-pad products-section" id="products">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Paint Products</span>
-      <h2>What We Manufacture</h2>
-      <p>Decorative and protective paint products, produced and supplied under our own brand.</p>
+      <span class="eyebrow">Manufactured Paints &amp; Products</span>
+      <h2>Product Catalog &amp; Pricing</h2>
+      <p>Browse our in-house manufactured luxury paints, decorative plasters, and protective coatings. Contact us directly on WhatsApp to order with instant delivery confirmation.</p>
     </div>
-    <div class="cat-grid reveal" id="productsGrid"></div>
+
+    <!-- Filter Buttons -->
+    <div class="cat-filter-bar reveal" id="productFilterBar">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="paints">Paints</button>
+      <button class="filter-btn" data-filter="plasters">Plasters &amp; Screeding</button>
+      <button class="filter-btn" data-filter="protective">Protective Coatings</button>
+    </div>
+
+    <div class="products-grid reveal" id="productsGrid"></div>
   </div>
 </section>
 
-<!-- ============ CHEMICALS ============ -->
-<section class="sec-pad" style="background:var(--gray);" id="chemicals">
+<!-- ============ CHEMICALS & RAW MATERIALS ============ -->
+<section class="sec-pad" style="background:var(--gray-bg);" id="chemicals">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Paint Chemicals</span>
-      <h2>Raw Materials &amp; Additives</h2>
-      <p>The base chemicals and additives behind every batch we produce.</p>
+      <span class="eyebrow">Industrial Chemical Raw Materials</span>
+      <h2>Paint Chemicals &amp; Additives</h2>
+      <p>We supply pure industrial-grade raw materials in bulk and retail for paint producers, chemical manufacturers, and construction contractors.</p>
     </div>
     <div class="chem-grid reveal" id="chemicalsGrid"></div>
   </div>
@@ -433,11 +1746,11 @@
 <section class="sec-pad" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Interior &amp; Building Services</span>
-      <h2>What We Deliver On Site</h2>
-      <p>From concept to final finish — interior, renovation and building services in one place.</p>
+      <span class="eyebrow">On-Site Execution</span>
+      <h2>Interior &amp; Building Finishing Services</h2>
+      <p>From initial 3D visualization and color planning to screeding, marble trowel application, and full building renovations.</p>
     </div>
-    <div class="cat-grid reveal" id="servicesGrid"></div>
+    <div class="services-grid reveal" id="servicesGrid"></div>
   </div>
 </section>
 
@@ -445,40 +1758,46 @@
 <section class="gallery sec-pad" id="gallery">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Portfolio</span>
-      <h2>Featured Projects</h2>
-      <p>A cross-section of interior, finishing and paint production work.</p>
+      <span class="eyebrow">Real Site Work</span>
+      <h2>Featured Projects &amp; Applications</h2>
+      <p>A showcase of our luxury finishes, architectural painting, and residential renovations delivered across Nigeria.</p>
     </div>
     <div class="masonry reveal" id="galleryGrid"></div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIALS ============ -->
+<!-- ============ REVIEWS ============ -->
 <section class="sec-pad" id="reviews">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="eyebrow">Client Voices</span>
-      <h2>Reviews</h2>
+      <span class="eyebrow">Verified Feedback</span>
+      <h2>What Our Clients Say</h2>
+      <p>Real experiences from property developers, homeowners, and interior contractors.</p>
     </div>
     <div class="testi-grid reveal" id="testiGrid"></div>
     <div class="google-badge reveal">
       <a href="https://share.google/LQZbbjExSyXT240y7" target="_blank" rel="noopener" class="btn btn-outline-dark" id="googleReviewLink">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21.6 12.2c0-.7-.06-1.4-.18-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4Z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22Z"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2Z"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A9.8 9.8 0 0 0 12 2 10 10 0 0 0 3.1 7.4l3.3 2.6C7.2 7.7 9.4 5.9 12 5.9Z"/></svg>
-        Read Verified Reviews on Google
+        Read Verified Reviews on Google Business
       </a>
     </div>
   </div>
 </section>
 
 <!-- ============ CTA BAND ============ -->
-<section style="padding:16px 0 36px;">
-  <div class="cta-band reveal">
-    <div class="cta-inner">
-      <div>
-        <h2>Ready to Transform Your Space?</h2>
-        <p id="ctaText">Talk to us on WhatsApp for a fast quote on paints, chemicals, or an interior project.</p>
+<section style="padding:16px 0 40px;">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-inner">
+        <div>
+          <h2>Ready to Transform Your Building with Quality Finishes?</h2>
+          <p id="ctaText">Talk to our technical team on WhatsApp for factory-direct prices, free estimates, and fast site delivery.</p>
+        </div>
+        <a href="#" class="btn btn-gold js-quote-link" id="openQuoteCta" target="_blank" rel="noopener" style="font-size:15px; padding:16px 32px;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>
+          Chat with Us on WhatsApp
+        </a>
       </div>
-      <a href="#" class="btn btn-gold js-quote-link" id="openQuoteCta" target="_blank" rel="noopener">Chat on WhatsApp</a>
     </div>
   </div>
 </section>
@@ -487,69 +1806,104 @@
 <section class="sec-pad">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Questions</span>
+      <span class="eyebrow">Clear Answers</span>
       <h2>Frequently Asked Questions</h2>
+      <p>Have questions about ordering paints, chemical supplies, or booking a finishing team? Here is what you need to know.</p>
     </div>
     <div class="faq-list reveal" id="faqList">
-      <div class="faq-item open"><button class="faq-q">Do you sell paint directly, without a full project?<span class="plus"></span></button><div class="faq-a"><p>Yes. Our paints, chemicals and additives can be purchased directly, whether or not you book a full interior or finishing service.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Which areas do you service?<span class="plus"></span></button><div class="faq-a"><p>We're based in Ikorodu, Lagos and service clients across Lagos and beyond — reach out to confirm availability for your location.</p></div></div>
-      <div class="faq-item"><button class="faq-q">How is pricing determined?<span class="plus"></span></button><div class="faq-a"><p>Pricing depends on the products or services required and project size. Message us on WhatsApp for a fast, no-obligation quote.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Can you handle a full interior renovation?<span class="plus"></span></button><div class="faq-a"><p>Yes — from space planning and colour consultation through to finishing and styling, we manage the full renovation process.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Do you supply chemicals in bulk for other manufacturers?<span class="plus"></span></button><div class="faq-a"><p>Yes, our paint chemicals and additives are available in bulk. Contact us with your volume requirements for pricing.</p></div></div>
+      <div class="faq-item open">
+        <button class="faq-q">Can I buy paint and chemicals directly from your factory without hiring your workers?<span class="plus"></span></button>
+        <div class="faq-a"><p>Yes, absolutely. We sell paints, protective finishes, and industrial chemical raw materials directly to homeowners, painters, manufacturers, and contractors across Nigeria.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Where is your factory located and how does delivery work?<span class="plus"></span></button>
+        <div class="faq-a"><p>Our manufacturing workshop and office are located at 258 Owutu Isawo Road, Opposite Nipco Filling Station, Ikorodu, Lagos State. We arrange fast delivery across Lagos and nationwide interstate transport.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I place an order for custom paint colors?<span class="plus"></span></button>
+        <div class="faq-a"><p>Simply send us your color swatch, photo, or shade code on WhatsApp. We mix and match with precision pigment pastes and dispatch within 24 to 48 hours.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you supply chemicals in industrial bulk (drums, tons, bags)?<span class="plus"></span></button>
+        <div class="faq-a"><p>Yes. We supply calcium carbonate, marble dust, titanium dioxide, acrylic resins, taxanol, thickeners, and anti-fungal agents in bulk at wholesale rates for commercial manufacturers.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can your team handle complete interior renovation and screeding?<span class="plus"></span></button>
+        <div class="faq-a"><p>Yes. Our skilled artisans handle full wall surface preparation, putty/screeding, luxury marble trowel, stucco plastering, and ceiling finishing from start to handover.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section class="sec-pad" style="background:var(--gray);" id="contact">
+<section class="sec-pad" style="background:var(--gray-bg);" id="contact">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Get In Touch</span>
-      <h2>Let's Start Your Project</h2>
+      <h2>Let's Discuss Your Project</h2>
+      <p>Visit our factory in Ikorodu or connect with our sales and technical team immediately.</p>
     </div>
     <div class="contact-grid">
       <div class="reveal">
         <div class="info-card">
-          <h3>Contact Information</h3>
-          <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2 1a11 11 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5Z"/></svg><div><b>Phone</b><span class="js-phone">0817 470 6260</span></div></div>
-          <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 2a5 5 0 0 1 3.5 8.5L12 19l-3-3 8.5-8.5A2.5 2.5 0 1 0 14 4l-9 9-2 6 6-2 9-9"/></svg><div><b>WhatsApp</b><span class="js-whatsapp">0817 470 6260</span></div></div>
-          <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg><div><b>Email</b><span class="js-email">exclusivechemical12@gmail.com</span></div></div>
-          <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Address</b><span class="js-address">158, Isawo Owutu Road, Off Nipco Filling Station, Ikorodu, Lagos, Nigeria</span></div></div>
+          <h3>Contact Details</h3>
+          <p style="color:rgba(255,255,255,0.6); font-size:13.5px; margin-bottom:14px;">Reach us directly by phone, WhatsApp, or email.</p>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2 1a11 11 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5Z"/></svg>
+            <div><b>Direct Phones</b><span class="js-phone">0817 470 6260, 0814 344 2682</span></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>
+            <div><b>WhatsApp Chat</b><span class="js-whatsapp">+2348174706260</span></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+            <div><b>Email Address</b><span class="js-email">exclusivechemical12@gmail.com</span></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><b>Factory &amp; Office Address</b><span class="js-address">258 Owutu Isawo Road, Opposite Nipco Filling Station, Ikorodu, Lagos State, Nigeria</span></div>
+          </div>
           <div class="social-row">
-            <a href="#" class="icon-btn js-social-fb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M14 9V6a2 2 0 0 1 2-2h2V1h-3a4 4 0 0 0-4 4v4H8v3h3v9h3v-9h3l1-3h-4Z"/></svg></a>
-            <a href="#" class="icon-btn js-social-ig" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
-            <a href="#" class="icon-btn js-social-tiktok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 3v13a3 3 0 1 1-2-2.8"/><path d="M9 7a5 5 0 0 0 5 4V7a5 5 0 0 1-5-4"/></svg></a>
+            <a href="#" class="icon-btn js-social-fb" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9V6a2 2 0 0 1 2-2h2V1h-3a4 4 0 0 0-4 4v4H8v3h3v9h3v-9h3l1-3h-4Z"/></svg></a>
+            <a href="#" class="icon-btn js-social-ig" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+            <a href="#" class="icon-btn js-social-tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3v13a3 3 0 1 1-2-2.8"/><path d="M9 7a5 5 0 0 0 5 4V7a5 5 0 0 1-5-4"/></svg></a>
           </div>
         </div>
         <div class="map-box">
           <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice"><rect width="400" height="220" fill="#e5e5e5"/><g stroke="#bdbdbd" stroke-width="1"><line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="140" x2="400" y2="140"/><line x1="100" y1="0" x2="100" y2="220"/><line x1="280" y1="0" x2="280" y2="220"/></g></svg>
           <div class="map-pin"></div>
-          <a class="btn btn-gold map-directions" style="padding:9px 16px; font-size:12px;" id="mapDirections" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn-gold map-directions" style="padding:8px 16px; font-size:12px;" id="mapDirections" target="_blank" rel="noopener">Open Google Maps</a>
         </div>
       </div>
 
       <div class="reveal">
         <div class="form-card">
-          <h3 class="serif" style="font-size:21px; margin-bottom:20px;">Request a Quote</h3>
+          <h3 style="font-size:22px; margin-bottom:6px;">Send Factory Enquiry</h3>
+          <p style="color:var(--text-muted); font-size:13.5px; margin-bottom:20px;">Fill out the details below and we will prepare a quotation for you.</p>
           <div class="form-row">
-            <div class="field"><label for="cName">Full Name</label><input id="cName" type="text" placeholder="Your full name"></div>
+            <div class="field"><label for="cName">Your Name</label><input id="cName" type="text" placeholder="e.g. Engr. Babatunde"></div>
             <div class="field"><label for="cPhone">Phone Number</label><input id="cPhone" type="tel" placeholder="080X XXX XXXX"></div>
           </div>
-          <div class="field"><label for="cEmail">Email</label><input id="cEmail" type="email" placeholder="you@email.com"></div>
+          <div class="field"><label for="cEmail">Email Address</label><input id="cEmail" type="email" placeholder="name@email.com"></div>
           <div class="field">
-            <label for="cService">Service Needed</label>
+            <label for="cService">Interest / Requirement</label>
             <select id="cService">
-              <option>Paint Products</option>
-              <option>Paint Chemicals</option>
-              <option>Interior Design</option>
-              <option>Building / Property Finishing</option>
-              <option>Not sure — advise me</option>
+              <option>Paint Products (Gravitex, Satin, Silk, Emulsion)</option>
+              <option>Industrial Paint Chemicals &amp; Additives</option>
+              <option>Interior Finishing &amp; Marble Trowel Application</option>
+              <option>Full Building Painting &amp; Renovation</option>
+              <option>Wholesale &amp; Contractor Supplies</option>
+              <option>Other / Not sure — advise me</option>
             </select>
           </div>
-          <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" placeholder="Tell us a bit about your project..."></textarea></div>
-          <button type="button" class="btn btn-gold" style="width:100%;" id="submitForm">Send Enquiry</button>
-          <div class="wa-fallback"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg><a href="#" class="js-quote-link" id="formWaLink" target="_blank" rel="noopener">Prefer WhatsApp? Chat with us directly</a></div>
-          <div class="form-toast" id="formToast">Your email app should now be open with this enquiry pre-filled — just hit send. You can also reach us instantly on WhatsApp above.</div>
+          <div class="field"><label for="cMsg">Project Details / Quantities</label><textarea id="cMsg" placeholder="Tell us how many drums, your site location, or specific requirements..."></textarea></div>
+          <button type="button" class="btn btn-gold" style="width:100%; font-size:15px; padding:15px;" id="submitForm">Send Message</button>
+          <div class="wa-fallback">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>
+            <a href="#" class="js-quote-link" id="formWaLink" target="_blank" rel="noopener">Prefer direct WhatsApp chat? Click to message us</a>
+          </div>
+          <div class="form-toast" id="formToast">Your email application should now be open with your pre-filled inquiry. You can also chat directly on WhatsApp!</div>
         </div>
       </div>
     </div>
@@ -561,301 +1915,494 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="foot-logo" id="footLogoTrigger"><span class="logo-mark" id="logoMarkFooter"></span>Lavish Exclusive</div>
-        <p class="foot-sub" id="footerAbout">Manufacturers of premium decorative and protective paints, industrial paint chemicals, and interior finishing solutions — Luxury Meets Innovation.</p>
+        <div class="foot-logo" id="footLogoTrigger">
+          <span class="logo-mark" id="logoMarkFooter"></span>
+          Lavish Exclusive Chemical
+        </div>
+        <p class="foot-sub" id="footerAbout">Manufacturers of premium decorative and protective paints, industrial paint chemicals, and interior finishing solutions across Nigeria. Registered Business RN: 9043776.</p>
         <div class="foot-social">
-          <a href="#" class="js-social-fb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M14 9V6a2 2 0 0 1 2-2h2V1h-3a4 4 0 0 0-4 4v4H8v3h3v9h3v-9h3l1-3h-4Z"/></svg></a>
-          <a href="#" class="js-social-ig" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg></a>
-          <a href="#" class="js-social-tiktok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 3v13a3 3 0 1 1-2-2.8"/><path d="M9 7a5 5 0 0 0 5 4V7a5 5 0 0 1-5-4"/></svg></a>
+          <a href="#" class="js-social-fb" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9V6a2 2 0 0 1 2-2h2V1h-3a4 4 0 0 0-4 4v4H8v3h3v9h3v-9h3l1-3h-4Z"/></svg></a>
+          <a href="#" class="js-social-ig" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+          <a href="#" class="js-social-tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3v13a3 3 0 1 1-2-2.8"/><path d="M9 7a5 5 0 0 0 5 4V7a5 5 0 0 1-5-4"/></svg></a>
         </div>
       </div>
       <div>
         <h5>Quick Links</h5>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Explore</h5>
-        <ul>
-          <li><a href="#products">Paint Products</a></li>
+          <li><a href="#about">About Our Factory</a></li>
+          <li><a href="#products">Products &amp; Pricing</a></li>
           <li><a href="#chemicals">Paint Chemicals</a></li>
-          <li><a href="#services">Interior Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#services">Interior &amp; Exterior Services</a></li>
+          <li><a href="#gallery">Featured Projects</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
         </ul>
       </div>
       <div>
-        <h5>Contact</h5>
+        <h5>Products &amp; Additives</h5>
         <ul>
-          <li class="js-phone">0817 470 6260</li>
+          <li><a href="#products">Gravitex &amp; Texcoat</a></li>
+          <li><a href="#products">Satin &amp; Silk Paints</a></li>
+          <li><a href="#products">Marble Trowel &amp; Stucco</a></li>
+          <li><a href="#products">Wall Screeding / Putty</a></li>
+          <li><a href="#chemicals">Calcium, Titanium &amp; Resins</a></li>
+          <li><a href="#chemicals">Anti-Fungi &amp; Acrylic Binders</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact LEC</h5>
+        <ul>
+          <li class="js-phone">0817 470 6260, 0814 344 2682</li>
           <li class="js-email">exclusivechemical12@gmail.com</li>
-          <li class="js-address">158, Isawo Owutu Road, Ikorodu, Lagos</li>
+          <li class="js-address">258 Owutu Isawo Road, Opp. Nipco Filling Station, Ikorodu, Lagos</li>
+          <li style="margin-top:12px; color:var(--gold); font-weight:700;">RN: 9043776</li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; 2026 Lavish Exclusive Chemical &amp; Interior Concept (LEC). RN: 9043776. All rights reserved.</span>
-      <span>Luxury Meets Innovation</span>
+      <span>&copy; 2026 Lavish Exclusive Chemical. All rights reserved. Registered Business RN: 9043776.</span>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <span class="foot-admin-link" id="footAdminLink">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+          Admin Portal
+        </span>
+        <span style="color:rgba(255,255,255,0.4); font-size:12px;">Luxury Meets Innovation</span>
+      </div>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/2348174706260" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<!-- Floating WhatsApp Action -->
+<a href="https://wa.me/2348174706260" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat directly on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 20 12a8 8 0 0 1-8 8Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1s-.7.8-.9 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3a2.5 2.5 0 0 0-.8 1.9c0 1.1.8 2.2.9 2.4.1.2 1.6 2.6 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.4-.6 1.6-1.1s.2-.9.1-1c-.1-.1-.2-.2-.4-.3Z"/></svg>
 </a>
 
-<!-- ============ ADMIN ============ -->
+<!-- Admin Launcher -->
 <button class="admin-launcher" id="adminLauncher">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
   Admin
 </button>
 
+<!-- ============ ADMIN DRAWER ============ -->
 <div class="admin-scrim" id="adminScrim"></div>
 <div class="admin-drawer" id="adminDrawer">
   <div class="admin-head">
     <div class="admin-head-row">
       <div>
-        <h3>Site Admin</h3>
-        <p>Edit content, catalogs and gallery — changes publish live for every visitor.</p>
+        <h3>LEC Site Admin</h3>
+        <p>Edit content, product pricing, images, and catalog live on Supabase.</p>
       </div>
-      <button class="icon-btn" id="closeAdmin" style="border-color:var(--line); color:var(--ink);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button id="adminLockBtn" title="Lock Admin" style="background:none; border:1px solid var(--gray-line); padding:6px 10px; border-radius:4px; font-size:12px; font-weight:700; color:var(--text-muted); display:none;">Lock</button>
+        <button class="icon-btn" id="closeAdmin" style="border-color:var(--gray-line); color:var(--text-main); width:34px; height:34px;" aria-label="Close Admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
     </div>
     <div class="admin-tabs" id="adminTabs" style="display:none;">
-      <button class="admin-tab active" data-tab="content">Content</button>
-      <button class="admin-tab" data-tab="products">Products</button>
+      <button class="admin-tab active" data-tab="products">Products &amp; Prices</button>
+      <button class="admin-tab" data-tab="content">Page Content</button>
       <button class="admin-tab" data-tab="chemicals">Chemicals</button>
       <button class="admin-tab" data-tab="services">Services</button>
       <button class="admin-tab" data-tab="gallery">Gallery</button>
       <button class="admin-tab" data-tab="reviews">Reviews</button>
-      <button class="admin-tab" data-tab="links">Links</button>
+      <button class="admin-tab" data-tab="links">Contacts &amp; Links</button>
+      <button class="admin-tab" data-tab="keepalive">Keepalive &amp; Backup</button>
       <button class="admin-tab" data-tab="seo">SEO</button>
     </div>
   </div>
 
   <div class="admin-body" id="adminBody">
+    <!-- Passcode Gate -->
     <div class="admin-gate" id="adminGate">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
       <h4>Admin Access</h4>
-      <p>Enter the passcode to edit this site.</p>
-      <input type="password" id="gatePassInput" placeholder="Passcode" autocomplete="off">
+      <p>Enter the master passcode to manage products, pricing, and live site content.</p>
+      <input type="password" id="gatePassInput" placeholder="Enter Passcode" autocomplete="off">
       <div class="gate-error" id="gateError"></div>
-      <button class="btn btn-gold" id="gateUnlockBtn" style="padding:11px 26px;">Unlock</button>
+      <button class="btn btn-gold" id="gateUnlockBtn" style="padding:11px 28px;">Unlock Admin</button>
     </div>
 
+    <!-- Admin Content Panels -->
     <div id="adminPanels" style="display:none;">
-      <div class="admin-note">Anyone who opens this site link sees your saved edits — there's no per-visitor view. Image fields take a direct image URL you control.</div>
-
-      <div class="admin-panel active" data-panel="content">
-        <div class="admin-group-label">Company Logo</div>
-        <div class="admin-field"><label>Logo mark (shows in header, mobile menu &amp; footer)</label><input id="f-logo-img" placeholder="Upload a logo below, or paste a link"><div class="upload-row" data-target="f-logo-img"><label class="upload-btn">Upload from device<input type="file" accept="image/*" class="upload-input"></label><img class="upload-thumb" id="thumb-f-logo-img" alt=""><span class="upload-status" id="status-f-logo-img"></span></div></div>
-        <div class="admin-group-label">Hero</div>
-        <div class="admin-field"><label>Headline (plain, no HTML)</label><input id="f-hero-headline"></div>
-        <div class="admin-field"><label>Hero subtext</label><textarea id="f-hero-sub"></textarea></div>
-        <div class="admin-field"><label>Hero image</label><input id="f-hero-img" placeholder="Upload a photo below, or paste a link"><div class="upload-row" data-target="f-hero-img"><label class="upload-btn">Upload from device<input type="file" accept="image/*" class="upload-input"></label><img class="upload-thumb" id="thumb-f-hero-img" alt=""><span class="upload-status" id="status-f-hero-img"></span></div></div>
-        <div class="admin-group-label">About</div>
-        <div class="admin-field"><label>Heading</label><input id="f-about-heading"></div>
-        <div class="admin-field"><label>Intro line</label><textarea id="f-about-lede"></textarea></div>
-        <div class="admin-field"><label>Body paragraph</label><textarea id="f-about-body"></textarea></div>
-        <div class="admin-field"><label>About image</label><input id="f-about-img" placeholder="Upload a photo below, or paste a link"><div class="upload-row" data-target="f-about-img"><label class="upload-btn">Upload from device<input type="file" accept="image/*" class="upload-input"></label><img class="upload-thumb" id="thumb-f-about-img" alt=""><span class="upload-status" id="status-f-about-img"></span></div></div>
-        <div class="admin-group-label">CTA Banner</div>
-        <div class="admin-field"><label>Supporting text</label><textarea id="f-cta-text"></textarea></div>
-        <div class="admin-group-label">Footer</div>
-        <div class="admin-field"><label>About blurb</label><textarea id="f-footer-about"></textarea></div>
-      </div>
-
-      <div class="admin-panel" data-panel="products">
-        <div class="admin-note">Each product card can have a name, short description, and image.</div>
+      
+      <!-- PRODUCTS PANEL (Requirement #4) -->
+      <div class="admin-panel active" data-panel="products">
+        <div class="admin-note">
+          <b>Product List &amp; Pricing Management</b><br>
+          Edit product names, categories, prices, images, and descriptions. All changes save directly to your Supabase database and update on the site immediately.
+        </div>
         <div id="productsAdminList"></div>
-        <button class="add-item-btn" id="addProductBtn">+ Add Product</button>
+        <button class="add-item-btn" id="addProductBtn">+ Add New Product</button>
       </div>
 
+      <!-- CONTENT PANEL -->
+      <div class="admin-panel" data-panel="content">
+        <div class="admin-note">Edit company branding, logo, headlines, and introductory text.</div>
+        <div class="admin-group-label">Company Logo</div>
+        <div class="admin-field">
+          <label>Logo mark (displays in header, mobile menu, and footer)</label>
+          <input id="f-logo-img" placeholder="Upload a logo below, or paste an image link">
+          <div class="upload-row" data-target="f-logo-img">
+            <label class="upload-btn">Upload Logo<input type="file" accept="image/*" class="upload-input"></label>
+            <img class="upload-thumb" id="thumb-f-logo-img" alt="">
+            <span class="upload-status" id="status-f-logo-img"></span>
+          </div>
+        </div>
+
+        <div class="admin-group-label">Hero Section</div>
+        <div class="admin-field"><label>Headline (plain text)</label><input id="f-hero-headline"></div>
+        <div class="admin-field"><label>Hero subtext</label><textarea id="f-hero-sub"></textarea></div>
+        <div class="admin-field">
+          <label>Hero visual photo</label>
+          <input id="f-hero-img" placeholder="Upload a photo below, or paste an image link">
+          <div class="upload-row" data-target="f-hero-img">
+            <label class="upload-btn">Upload Photo<input type="file" accept="image/*" class="upload-input"></label>
+            <img class="upload-thumb" id="thumb-f-hero-img" alt="">
+            <span class="upload-status" id="status-f-hero-img"></span>
+          </div>
+        </div>
+
+        <div class="admin-group-label">About Section</div>
+        <div class="admin-field"><label>Heading</label><input id="f-about-heading"></div>
+        <div class="admin-field"><label>Intro statement</label><textarea id="f-about-lede"></textarea></div>
+        <div class="admin-field"><label>Body description</label><textarea id="f-about-body"></textarea></div>
+        <div class="admin-field">
+          <label>About section photo</label>
+          <input id="f-about-img" placeholder="Upload a photo below, or paste an image link">
+          <div class="upload-row" data-target="f-about-img">
+            <label class="upload-btn">Upload Photo<input type="file" accept="image/*" class="upload-input"></label>
+            <img class="upload-thumb" id="thumb-f-about-img" alt="">
+            <span class="upload-status" id="status-f-about-img"></span>
+          </div>
+        </div>
+
+        <div class="admin-group-label">CTA Banner &amp; Footer</div>
+        <div class="admin-field"><label>CTA Banner subtext</label><textarea id="f-cta-text"></textarea></div>
+        <div class="admin-field"><label>Footer about description</label><textarea id="f-footer-about"></textarea></div>
+      </div>
+
+      <!-- CHEMICALS PANEL -->
       <div class="admin-panel" data-panel="chemicals">
-        <div class="admin-note">Chemicals are listed as a compact name + description grid (no image).</div>
+        <div class="admin-note">List of base paint chemicals, additives, and fillers supplied to other manufacturers and contractors.</div>
         <div id="chemicalsAdminList"></div>
         <button class="add-item-btn" id="addChemicalBtn">+ Add Chemical</button>
       </div>
 
+      <!-- SERVICES PANEL -->
       <div class="admin-panel" data-panel="services">
+        <div class="admin-note">Services offered on-site (interior design, screeding, marble plastering, painting, etc.).</div>
         <div id="servicesAdminList"></div>
         <button class="add-item-btn" id="addServiceBtn">+ Add Service</button>
       </div>
 
+      <!-- GALLERY PANEL -->
       <div class="admin-panel" data-panel="gallery">
-        <div class="admin-note">Upload, edit, or delete project photos. Each has a category tag, title, description and image.</div>
+        <div class="admin-note">Featured project photos and site applications. Upload photos from your camera or paste image URLs.</div>
         <div id="galleryAdminList"></div>
-        <button class="add-item-btn" id="addGalleryBtn">+ Add Project</button>
+        <button class="add-item-btn" id="addGalleryBtn">+ Add Project Photo</button>
       </div>
 
+      <!-- REVIEWS PANEL -->
       <div class="admin-panel" data-panel="reviews">
-        <div class="admin-note">Paste in real reviews from your Google Business Profile — live API sync isn't connected here.</div>
+        <div class="admin-note">Real reviews from your Google Business Profile or clients.</div>
         <div id="reviewsAdminList"></div>
         <button class="add-item-btn" id="addReviewBtn">+ Add Review</button>
-        <div class="admin-group-label">Google Reviews Link</div>
-        <div class="admin-field"><label>Google review / profile URL</label><input id="f-google-url"></div>
+        <div class="admin-group-label">Google Review Link</div>
+        <div class="admin-field"><label>Google Business Review URL</label><input id="f-google-url"></div>
       </div>
 
+      <!-- LINKS & CONTACTS PANEL -->
       <div class="admin-panel" data-panel="links">
-        <div class="admin-group-label">Contact details</div>
-        <div class="admin-field"><label>Phone number (display)</label><input id="f-phone"></div>
-        <div class="admin-field"><label>WhatsApp number (digits + country code, e.g. 2348174706260)</label><input id="f-whatsapp"></div>
+        <div class="admin-group-label">Direct Contacts</div>
+        <div class="admin-field"><label>Display Phone Numbers (comma-separated)</label><input id="f-phone"></div>
+        <div class="admin-field"><label>WhatsApp Number (format: country code + digits, e.g. 2348174706260)</label><input id="f-whatsapp"></div>
         <div class="admin-field"><label>Email address</label><input id="f-email"></div>
-        <div class="admin-field"><label>Address</label><input id="f-address"></div>
-        <div class="admin-group-label">Social links</div>
-        <div class="admin-field"><label>Facebook URL</label><input id="f-fb"></div>
-        <div class="admin-field"><label>Instagram URL</label><input id="f-ig"></div>
-        <div class="admin-field"><label>TikTok URL</label><input id="f-tiktok"></div>
+        <div class="admin-field"><label>Physical factory / office address</label><input id="f-address"></div>
+        <div class="admin-group-label">Social Media Handles</div>
+        <div class="admin-field"><label>Facebook Link</label><input id="f-fb"></div>
+        <div class="admin-field"><label>Instagram Link</label><input id="f-ig"></div>
+        <div class="admin-field"><label>TikTok Link</label><input id="f-tiktok"></div>
       </div>
 
-      <div class="admin-panel" data-panel="seo">
-        <div class="admin-field"><label>Page title (browser tab)</label><input id="f-seo-title"></div>
-        <div class="admin-field"><label>Meta description</label><textarea id="f-seo-desc"></textarea></div>
-        <div class="admin-field"><label>Business registration number</label><input id="f-reg-number"></div>
+      <!-- KEEPALIVE & BACKUP PANEL (Requirement #2 & Data Safety) -->
+      <div class="admin-panel" data-panel="keepalive">
+        <div class="keepalive-card">
+          <div class="keepalive-badge">Supabase Active &amp; Keepalive Enabled</div>
+          <p style="font-size:13px; color:#24532e; margin-top:6px; line-height:1.5;">
+            <b>Never-Pause Protection:</b> Free-tier Supabase normally pauses after 7 days of inactivity. An automated GitHub Actions workflow (<code style="background:rgba(0,0,0,0.06); padding:2px 4px; border-radius:3px;">.github/workflows/supabase-keepalive.yml</code>) pings your database every 12 hours, keeping it awake permanently without manual effort.
+          </p>
+        </div>
+
+        <div class="admin-field" style="margin-top:16px;">
+          <label>Test Database Ping Status</label>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <button class="btn btn-outline-dark btn-sm" id="pingSupabaseBtn">Ping Supabase Now</button>
+            <span id="pingStatusText" style="font-size:12.5px; color:var(--text-muted);">Status: Ready</span>
+          </div>
+        </div>
+
+        <div class="admin-group-label">Content Data Backup &amp; Restore</div>
+        <div class="admin-note">
+          Download a complete backup of all products, images, and content directly to your phone or computer. You can restore from it at any time.
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn btn-gold btn-sm" id="exportBackupBtn">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Export Backup (.JSON)
+          </button>
+          <label class="btn btn-outline-dark btn-sm" style="cursor:pointer;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+            Import Backup
+            <input type="file" id="importBackupInput" accept=".json" style="display:none;">
+          </label>
+        </div>
       </div>
+
+      <!-- SEO PANEL -->
+      <div class="admin-panel" data-panel="seo">
+        <div class="admin-field"><label>Page Title (Browser Tab)</label><input id="f-seo-title"></div>
+        <div class="admin-field"><label>Meta Search Description</label><textarea id="f-seo-desc"></textarea></div>
+        <div class="admin-field"><label>Business Registration Number (RN)</label><input id="f-reg-number"></div>
+      </div>
+
     </div>
   </div>
 
-  <div class="admin-foot" id="adminFoot" style="display:none; flex-direction:column; gap:8px;">
-    <div class="size-meter" id="sizeMeter">Content size: 0.00 MB of 5 MB limit</div>
+  <!-- Admin Sticky Footer -->
+  <div class="admin-foot" id="adminFoot" style="display:none;">
+    <div class="size-meter" id="sizeMeter">Content size: 0.00 MB of 25.00 MB limit</div>
     <div style="display:flex; gap:10px;">
-      <button class="btn btn-outline-dark" id="adminReset">Reset to Default</button>
-      <button class="btn btn-gold" id="adminSave">Save &amp; Publish</button>
+      <button class="btn btn-outline-dark" id="adminReset" style="flex:0.8;">Reset Default</button>
+      <button class="btn btn-gold" id="adminSave" style="flex:1.2;">Save &amp; Publish</button>
     </div>
   </div>
 </div>
-<div class="admin-toast" id="adminToast">Saved and published</div>
+<div class="admin-toast" id="adminToast">Saved and published live</div>
 
+<!-- ============ SCRIPT ============ -->
 <script>
 (function(){
-  /* ===================== DEFAULT DATA ===================== */
+  /* ===================== DEFAULT SITE DATA ===================== */
   const DEFAULTS = {
     logo: { img: "" },
     hero: {
-      headline: "Luxury Paints. Beautiful Interiors. Exceptional Finishes.",
+      headline: "Luxury Paints. High-Grade Chemicals. Exceptional Finishes.",
       sub: "Manufacturers of premium decorative and protective paints, industrial paint chemicals, and professional interior finishing solutions for homes, offices, and commercial properties.",
       img: ""
     },
     about: {
-      heading: "A trusted Nigerian name in premium paints and interior finishing.",
-      lede: "Lavish Exclusive Chemical & Interior Concept (LEC) specializes in the production and supply of premium decorative and protective paints, industrial paint chemicals, and complete building finishing solutions.",
+      heading: "A trusted Nigerian manufacturer in premium paints and interior finishing.",
+      lede: "Lavish Exclusive Chemical (LEC) specializes in the production and supply of premium decorative and protective paints, industrial paint chemicals, and complete building finishing solutions.",
       body: "We combine innovation, craftsmanship, and premium-quality materials to deliver exceptional results for residential, commercial, and industrial projects. Beyond paint manufacturing, LEC also provides professional interior design, renovation, property finishing, and space transformation services tailored to each client's vision.",
       img: ""
     },
-    ctaText: "Talk to us on WhatsApp for a fast quote on paints, chemicals, or an interior project.",
-    footerAbout: "Manufacturers of premium decorative and protective paints, industrial paint chemicals, and interior finishing solutions — Luxury Meets Innovation.",
+    ctaText: "Talk to our technical team on WhatsApp for factory-direct prices, free estimates, and fast site delivery across Nigeria.",
+    footerAbout: "Manufacturers of premium decorative and protective paints, industrial paint chemicals, and interior finishing solutions across Nigeria — Luxury Meets Innovation.",
     contact: {
-      phone: "0817 470 6260",
+      phone: "0817 470 6260, 0814 344 2682",
       whatsapp: "2348174706260",
       email: "exclusivechemical12@gmail.com",
-      address: "158, Isawo Owutu Road, Off Nipco Filling Station, Ikorodu, Lagos, Nigeria",
+      address: "258 Owutu Isawo Road, Opposite Nipco Filling Station, Ikorodu, Lagos State, Nigeria",
       fb: "https://www.facebook.com/photo.php?fbid=122094733791284206",
       ig: "https://www.instagram.com/lec_interoir",
       tiktok: "https://www.tiktok.com/@exclusiveinteriors01",
       googleUrl: "https://share.google/LQZbbjExSyXT240y7"
     },
     seo: {
-      title: "Lavish Exclusive Chemical & Interior Concept | Luxury Meets Innovation",
-      desc: "LEC manufactures premium decorative and protective paints, industrial paint chemicals, and delivers professional interior design and building finishing across Nigeria.",
+      title: "Lavish Exclusive Chemical | Luxury Paints & Industrial Chemicals",
+      desc: "Lavish Exclusive Chemical (LEC) manufactures premium decorative and protective paints, industrial paint chemicals, and delivers professional interior and building finishing across Nigeria.",
       reg: "RN: 9043776"
     },
     products: [
-      {name:"Gravitex", desc:"Textured decorative finish for feature walls and premium interiors.", img:""},
-      {name:"Emulsion Paint", desc:"Smooth, breathable finish for interior and exterior walls.", img:""},
-      {name:"Satin Paint", desc:"Soft-sheen finish that resists marks and wipes clean easily.", img:""},
-      {name:"Matt Paint", desc:"Flat, elegant finish that hides surface imperfections.", img:""},
-      {name:"Gloss Paint", desc:"High-shine, durable finish for doors, trims and metalwork.", img:""},
-      {name:"Texcoat", desc:"Textured protective coating built for long-lasting exteriors.", img:""},
-      {name:"Marble Trowel", desc:"Hand-applied marble-effect finish for luxury interior walls.", img:""},
-      {name:"Stucco", desc:"Classic decorative plaster finish with rich depth and texture.", img:""},
-      {name:"Screeding / Putty", desc:"Surface-levelling compound for a flawless paint-ready base.", img:""},
-      {name:"Protective Paints", desc:"Weather and corrosion-resistant coatings for tough surfaces.", img:""},
-      {name:"Decorative Paints", desc:"Premium finishes designed to elevate any interior or facade.", img:""}
+      {
+        name: "Gravitex",
+        category: "paints",
+        price: "₦48,000 / 20L Drum",
+        desc: "Heavy-textured decorative wall coating engineered for superior weather resistance, crack bridging, and architectural luxury interiors and exterior facades.",
+        img: ""
+      },
+      {
+        name: "Emulsion Paint",
+        category: "paints",
+        price: "₦26,000 / 20L Drum",
+        desc: "Smooth, breathable, high-coverage matte finish for interior and exterior walls. Easy application with rich, long-lasting color pigment.",
+        img: ""
+      },
+      {
+        name: "Satin Paint",
+        category: "paints",
+        price: "₦45,000 / 20L Drum",
+        desc: "Silky soft-sheen luxury finish that resists stains, fingerprints, and wipes clean easily with water. Ideal for living rooms and master bedrooms.",
+        img: ""
+      },
+      {
+        name: "Matte Paint",
+        category: "paints",
+        price: "₦32,000 / 20L Drum",
+        desc: "Flat, elegant velvety finish that diffuses light and masks minor plaster imperfections on walls and ceilings.",
+        img: ""
+      },
+      {
+        name: "Marble Trowel",
+        category: "plasters",
+        price: "₦65,000 / 20L Bucket",
+        desc: "Hand-crafted Italian marble-effect plaster formulated with natural crushed marble dust for high-end luxury feature walls.",
+        img: ""
+      },
+      {
+        name: "Stucco",
+        category: "plasters",
+        price: "₦58,000 / 20L Bucket",
+        desc: "Classic Venetian decorative plaster delivering polished stone depth, marbleized sheen, and tactile luxury for premium interiors.",
+        img: ""
+      },
+      {
+        name: "Screeding / Putty",
+        category: "plasters",
+        price: "₦18,500 / 20kg Bag",
+        desc: "Ultra-fine wall-smoothing compound designed to eliminate pinholes and create a mirror-flat, paint-ready surface.",
+        img: ""
+      },
+      {
+        name: "Protective Paints",
+        category: "protective",
+        price: "₦52,000 / 20L Drum",
+        desc: "Weatherproof and anti-fungal barrier coatings designed to withstand heavy rain, ultraviolet radiation, and humidity.",
+        img: ""
+      },
+      {
+        name: "Decorative Paints",
+        category: "paints",
+        price: "₦46,000 / 20L Drum",
+        desc: "Custom-formulated decorative metallic, pearl, and textured finishes tailored to upscale architectural projects.",
+        img: ""
+      }
     ],
     chemicals: [
-      {name:"Calcium Carbonate", desc:"Core filler used to bulk and strengthen paint formulations."},
-      {name:"Marble Dust", desc:"Fine aggregate for textured decorative finishes."},
-      {name:"Acrylic", desc:"Binder providing flexibility, adhesion and durability."},
-      {name:"Pigment", desc:"Colour concentrates for consistent, vibrant tones."},
-      {name:"Oxide", desc:"Colour-fast pigment base for long-lasting hues."},
-      {name:"Resin", desc:"Film-forming agent for finish strength and gloss control."},
-      {name:"Paste", desc:"Concentrated colour paste for precise tinting."},
-      {name:"Titan", desc:"Titanium dioxide base for opacity and brightness."},
-      {name:"Marble Stone", desc:"Aggregate used in premium marble-effect finishes."},
-      {name:"Xanol", desc:"Specialty additive for texture and flow control."},
-      {name:"Anti-Fungi", desc:"Additive that protects finishes from mould and fungal growth."},
-      {name:"Thickener", desc:"Controls viscosity for smooth, even application."},
-      {name:"Kaolin", desc:"Fine clay filler improving body and finish quality."},
-      {name:"Other Paint Additives", desc:"Specialty additives used across our formulations."}
+      {name:"Calcium Carbonate", desc:"High-purity core mineral filler used to strengthen body and opacity in paint formulations."},
+      {name:"Marble Dust", desc:"Refined crystalline aggregate for textured decorative plaster and marble trowel finishes."},
+      {name:"Acrylic Binder", desc:"Pure acrylic polymer providing maximum adhesion, scrub resistance, and film flexibility."},
+      {name:"Pigment Concentrates", desc:"UV-stable color pastes and concentrates for vibrant, non-fading custom tints."},
+      {name:"Oxide Pigments", desc:"Inorganic mineral oxides providing maximum weather and chemical durability."},
+      {name:"Formulation Resin", desc:"Film-forming agent controlling hardness, gloss level, and moisture resistance."},
+      {name:"Color Paste", desc:"High-strength dispersing paste for accurate color matching and tinting."},
+      {name:"Titan (Titanium Dioxide)", desc:"Pure rutile titanium dioxide providing maximum whiteness, brightness, and hiding power."},
+      {name:"Marble Stone Chips", desc:"Graded stone aggregate used in heavy texture coatings and exterior wall protection."},
+      {name:"Taxanol Coalescent", desc:"Specialty ester coalescing solvent optimizing film formation and washability."},
+      {name:"Anti-Fungi Biocide", desc:"Potent fungicidal and algaecidal additive protecting cured paint films from mould and damp."},
+      {name:"Cellulosic Thickener", desc:"Viscosity modifier ensuring smooth brush and roller application with zero spatter."},
+      {name:"Kaolin Clay", desc:"Fine calcined extender clay improving opacity, scrub resistance, and sheen uniformity."},
+      {name:"Specialty Additives", desc:"Defoamers, wetting agents, and stabilizers tailored for tropical manufacturing."}
     ],
     services: [
-      {name:"Interior Design", desc:"Full concept-to-completion interior design tailored to you.", img:""},
-      {name:"Space Planning", desc:"Smart layouts that make every room work harder.", img:""},
-      {name:"Furniture & Décor Sourcing", desc:"Curated furniture and décor sourced to fit your space.", img:""},
-      {name:"Styling & Finishing", desc:"The final layer of detail that makes a space feel complete.", img:""},
-      {name:"Renovation Coordination", desc:"End-to-end management of your renovation project.", img:""},
-      {name:"3D Visualization", desc:"See your space before a single wall is touched.", img:""},
-      {name:"Colour Consultation", desc:"Expert colour guidance matched to light, mood and use.", img:""},
-      {name:"Building Finishing", desc:"Structural finishing work carried out to a premium standard.", img:""},
-      {name:"Interior Finishing", desc:"Walls, ceilings and surfaces finished to perfection.", img:""},
-      {name:"Exterior Finishing", desc:"Facade and exterior finishing built to last outdoors.", img:""},
-      {name:"Property Renovation", desc:"Full property upgrades from planning through to handover.", img:""}
+      {name:"Interior Design & Space Planning", desc:"Full architectural concept design, layout planning, and finish selections tailored to you.", img:""},
+      {name:"Space Planning & 3D Visualization", desc:"Photorealistic 3D renders showing how finishes, colors, and lighting will look.", img:""},
+      {name:"Full Building & Property Finishing", desc:"Turnkey structural and aesthetic finishing for new builds, commercial blocks, and estates.", img:""},
+      {name:"Colour Consultation & Batch Tinting", desc:"Professional on-site color advice matched with our precision computerized mixing.", img:""},
+      {name:"Architectural Wall Screeding & Plastering", desc:"Flawless wall leveling, putty screeding, and marble trowel application by master artisans.", img:""}
     ],
     gallery: [
-      {category:"Interior Design", title:"Living Room Concept, Lagos", desc:"", img:""},
-      {category:"Building Finishing", title:"Executive Building Finish", desc:"", img:""},
-      {category:"Exterior Painting", title:"Facade Repaint, Ikorodu", desc:"", img:""},
-      {category:"Decorative Paint Projects", title:"Marble Trowel Feature Wall", desc:"", img:""},
-      {category:"Renovation Projects", title:"Full Home Renovation", desc:"", img:""},
-      {category:"Paint Production", title:"In-House Paint Batching", desc:"", img:""}
+      {category:"Interior Finishing", title:"Luxury Living Room Wall Finishing, Lagos", desc:"", img:""},
+      {category:"Building Finishing", title:"Executive Residential Facade Finishing", desc:"", img:""},
+      {category:"Exterior Painting", title:"Weatherproof Exterior Coating, Ikorodu", desc:"", img:""},
+      {category:"Decorative Plaster", title:"Custom Marble Trowel Accent Wall", desc:"", img:""},
+      {category:"Home Renovation", title:"Full Duplex Interior Renovation", desc:"", img:""},
+      {category:"Paint Production", title:"In-House Industrial Batch Manufacturing", desc:"", img:""}
     ],
     reviews: [
-      {name:"Add a real reviewer name", rating:5, text:"Replace this with an actual quote from your Google Business Profile.", date:"2026"},
-      {name:"Add a real reviewer name", rating:5, text:"Replace this with an actual quote from your Google Business Profile.", date:"2026"},
-      {name:"Add a real reviewer name", rating:5, text:"Replace this with an actual quote from your Google Business Profile.", date:"2026"}
+      {
+        name: "blaq admob expert",
+        rating: 5,
+        text: "I am highly impressed with this paint manufacturing company due to its commitment to quality, innovation, and customer satisfaction. The company consistently produces high-quality paints with excellent coverage, durability, and attractive finishes.",
+        date: "2026"
+      },
+      {
+        name: "Ayomide Adewale",
+        rating: 5,
+        text: "We couldn't be happier with the outstanding work by Lavish Exclusive Chemical. The paint finish is flawless, with rich, vibrant colors and exceptional attention to detail. Your professionalism and dedication truly exceeded our expectations!",
+        date: "2026"
+      }
     ]
   };
 
-  const ADMIN_PASS = 'lec2026';
+  /* ===================== CONFIG & AUTH ===================== */
+  // New Admin Passcode requested by user
+  const ADMIN_PASS = 'LEC54321@';
+  // Maximum content limit increased from 5MB to 25MB
+  const MAX_CONTENT_MB = 25.0;
+
   let unlocked = false;
   let STATE = JSON.parse(JSON.stringify(DEFAULTS));
   let draft = null;
 
-  function deepMerge(base, override){
+  /* Supabase REST configuration */
+  const SB_URL = 'https://fajtthnaxubcbmpceopf.supabase.co';
+  const SB_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhanR0aG5heHViY2JtcGNlb3BmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc0MDEyOTgsImV4cCI6MjEwMjk3NzI5OH0.xaKhogbm5-vKHeCAHevrhODqMIaoE-P4lju-lZgoSGI';
+  const SB_ROW_ID = 'main';
+  const SB_HEADERS = { apikey: SB_ANON_KEY, Authorization: 'Bearer ' + SB_ANON_KEY };
+
+  /* Safe Deep Merge to preserve user data */
+  function deepMerge(base, override) {
     const out = JSON.parse(JSON.stringify(base));
     if(!override) return out;
-    Object.keys(override).forEach(k=>{
-      if(Array.isArray(override[k])) out[k] = override[k];
-      else if(typeof override[k] === 'object' && override[k] !== null) out[k] = deepMerge(out[k]||{}, override[k]);
-      else out[k] = override[k];
+    Object.keys(override).forEach(k => {
+      if(Array.isArray(override[k])) {
+        // If product array, ensure price & category fields exist on every item
+        if(k === 'products') {
+          out[k] = override[k].map((p, idx) => {
+            const fallback = (base.products && base.products[idx]) || {};
+            return {
+              name: p.name || fallback.name || ('Product ' + (idx + 1)),
+              category: p.category || fallback.category || 'paints',
+              price: p.price || fallback.price || '₦45,000 / Drum',
+              desc: p.desc || fallback.desc || '',
+              img: p.img || fallback.img || ''
+            };
+          });
+        } else {
+          out[k] = override[k];
+        }
+      } else if(typeof override[k] === 'object' && override[k] !== null) {
+        out[k] = deepMerge(out[k] || {}, override[k]);
+      } else {
+        out[k] = override[k];
+      }
     });
     return out;
   }
 
-  const svcIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>';
-  const chemIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg>';
+  function esc(s){
+    return (s || '').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
 
-  /* ===================== RENDER LIVE SITE ===================== */
-  function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-
+  /* ===================== RENDER FRONTEND ===================== */
   function setImg(container, url){
     if(!container) return;
     let img = container.querySelector('img.dyn-img');
     if(url){
-      if(!img){ img = document.createElement('img'); img.className='dyn-img'; img.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;'; container.style.position='relative'; container.appendChild(img); }
+      if(!img){
+        img = document.createElement('img');
+        img.className = 'dyn-img';
+        img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
+        container.style.position = 'relative';
+        container.appendChild(img);
+      }
       img.src = url;
-    } else if(img){ img.remove(); }
+    } else if(img){
+      img.remove();
+    }
   }
 
   function renderLogo(url){
-    ['logoMarkHeader','logoMarkMobile','logoMarkFooter'].forEach(id=>{
+    ['logoMarkHeader','logoMarkMobile','logoMarkFooter'].forEach(id => {
       const el = document.getElementById(id);
       if(!el) return;
       let img = el.querySelector('img.logo-img');
       if(url){
-        if(!img){ img = document.createElement('img'); img.className='logo-img'; el.appendChild(img); }
+        if(!img){
+          img = document.createElement('img');
+          img.className = 'logo-img';
+          img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
+          el.appendChild(img);
+        }
         img.src = url;
         el.classList.add('has-img');
       } else if(img){
@@ -867,72 +2414,162 @@
 
   function renderContent(){
     renderLogo(STATE.logo.img);
-    document.getElementById('heroHeadline').textContent = STATE.hero.headline;
+    document.getElementById('heroHeadline').innerHTML = esc(STATE.hero.headline).replace(/Exceptional Finishes\.?/i, '<span class="accent">Exceptional Finishes.</span>');
     document.getElementById('heroSubtext').textContent = STATE.hero.sub;
     setImg(document.getElementById('heroVisualImg'), STATE.hero.img);
+
     document.getElementById('aboutHeading').textContent = STATE.about.heading;
     document.getElementById('aboutLede').textContent = STATE.about.lede;
     document.getElementById('aboutBody').textContent = STATE.about.body;
     setImg(document.getElementById('aboutVisualImg'), STATE.about.img);
+
     document.getElementById('ctaText').textContent = STATE.ctaText;
     document.getElementById('footerAbout').textContent = STATE.footerAbout;
     document.getElementById('regNumber').textContent = STATE.seo.reg;
 
     document.title = STATE.seo.title;
+    document.getElementById('pageTitle').textContent = STATE.seo.title;
     document.getElementById('pageDesc').setAttribute('content', STATE.seo.desc);
 
-    document.querySelectorAll('.js-phone').forEach(el=> el.textContent = STATE.contact.phone);
-    document.querySelectorAll('.js-whatsapp').forEach(el=> el.textContent = '+'+STATE.contact.whatsapp);
-    document.querySelectorAll('.js-email').forEach(el=> el.textContent = STATE.contact.email);
-    document.querySelectorAll('.js-address').forEach(el=> el.textContent = STATE.contact.address);
-    document.querySelectorAll('.js-social-fb').forEach(el=> el.href = STATE.contact.fb || '#');
-    document.querySelectorAll('.js-social-ig').forEach(el=> el.href = STATE.contact.ig || '#');
-    document.querySelectorAll('.js-social-tiktok').forEach(el=> el.href = STATE.contact.tiktok || '#');
+    document.querySelectorAll('.js-phone').forEach(el => el.textContent = STATE.contact.phone);
+    document.querySelectorAll('.js-whatsapp').forEach(el => el.textContent = '+' + STATE.contact.whatsapp.replace(/[^\d]/g,''));
+    document.querySelectorAll('.js-email').forEach(el => el.textContent = STATE.contact.email);
+    document.querySelectorAll('.js-address').forEach(el => el.textContent = STATE.contact.address);
 
-    const waHref = 'https://wa.me/'+STATE.contact.whatsapp.replace(/[^\d]/g,'');
-    document.querySelectorAll('.js-quote-link').forEach(el=> el.href = waHref+'?text='+encodeURIComponent("Hi LEC, I'd like to request a quote."));
-    document.getElementById('waFloat').href = waHref;
-    document.getElementById('formWaLink').href = waHref+'?text='+encodeURIComponent("Hi LEC, I'd like to enquire about a product/service.");
+    document.querySelectorAll('.js-social-fb').forEach(el => el.href = STATE.contact.fb || '#');
+    document.querySelectorAll('.js-social-ig').forEach(el => el.href = STATE.contact.ig || '#');
+    document.querySelectorAll('.js-social-tiktok').forEach(el => el.href = STATE.contact.tiktok || '#');
 
-    document.getElementById('mapDirections').href = 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(STATE.contact.address);
+    const cleanWa = STATE.contact.whatsapp.replace(/[^\d]/g,'');
+    const waBase = 'https://wa.me/' + cleanWa;
+    const generalQuoteUrl = waBase + '?text=' + encodeURIComponent("Hello Lavish Exclusive Chemical, I would like to request a quote for your paints and services.");
+    
+    document.querySelectorAll('.js-quote-link').forEach(el => el.href = generalQuoteUrl);
+    document.getElementById('waFloat').href = waBase;
+    document.getElementById('formWaLink').href = generalQuoteUrl;
+    document.getElementById('mapDirections').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(STATE.contact.address);
     document.getElementById('googleReviewLink').href = STATE.contact.googleUrl;
   }
 
+  /* Render Products with Prices & Direct WhatsApp Orders (Requirement #4) */
+  let currentProductFilter = 'all';
+
   function renderProducts(){
     const wrap = document.getElementById('productsGrid');
-    wrap.innerHTML = STATE.products.map(p=>{
-      const thumbInner = p.img ? '' : svcIcon;
-      return '<div class="p-card"><div class="thumb">'+thumbInner+(p.img?'<img src="'+esc(p.img)+'">':'')+'</div><div class="body"><h4>'+esc(p.name)+'</h4><p>'+esc(p.desc)+'</p></div></div>';
+    if(!wrap) return;
+
+    const cleanWa = STATE.contact.whatsapp.replace(/[^\d]/g,'');
+    const filtered = (STATE.products || []).filter(p => {
+      if(currentProductFilter === 'all') return true;
+      const cat = (p.category || 'paints').toLowerCase();
+      if(currentProductFilter === 'paints') return cat.includes('paint') || cat.includes('emulsion') || cat.includes('satin');
+      if(currentProductFilter === 'plasters') return cat.includes('plaster') || cat.includes('marble') || cat.includes('stucco') || cat.includes('putty') || cat.includes('screed');
+      if(currentProductFilter === 'protective') return cat.includes('protective') || cat.includes('weather') || cat.includes('barrier');
+      return true;
+    });
+
+    if(filtered.length === 0){
+      wrap.innerHTML = '<div style="grid-column:1/-1; padding:40px; text-align:center; color:var(--text-muted);">No products found in this category.</div>';
+      return;
+    }
+
+    wrap.innerHTML = filtered.map(p => {
+      const orderMsg = encodeURIComponent("Hello Lavish Exclusive Chemical, I would like to order: " + p.name + " (" + (p.price || 'Direct Quote') + "). Please confirm availability and delivery.");
+      const waUrl = 'https://wa.me/' + cleanWa + '?text=' + orderMsg;
+      
+      const thumbContent = p.img 
+        ? '<img src="' + esc(p.img) + '" alt="' + esc(p.name) + '" loading="lazy">'
+        : '<svg class="fallback-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>';
+
+      const displayCategory = p.category ? esc(p.category) : 'Premium Finish';
+      const displayPrice = p.price ? esc(p.price) : 'Contact for Price';
+
+      return '<div class="prod-card">' +
+        '<div class="prod-thumb">' +
+          '<span class="prod-cat-pill">' + displayCategory + '</span>' +
+          thumbContent +
+        '</div>' +
+        '<div class="prod-body">' +
+          '<div class="prod-head-row">' +
+            '<h4>' + esc(p.name) + '</h4>' +
+            '<span class="prod-price">' + displayPrice + '</span>' +
+          '</div>' +
+          '<p class="prod-desc">' + esc(p.desc) + '</p>' +
+          '<div class="prod-foot">' +
+            '<a href="' + waUrl + '" target="_blank" rel="noopener" class="prod-order-btn">' +
+              '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>' +
+              'Order on WhatsApp' +
+            '</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
     }).join('');
   }
+
   function renderChemicals(){
     const wrap = document.getElementById('chemicalsGrid');
-    wrap.innerHTML = STATE.chemicals.map(c=>{
-      return '<div class="chem-card"><div class="dot">'+chemIcon+'</div><div><h5>'+esc(c.name)+'</h5><p>'+esc(c.desc)+'</p></div></div>';
+    if(!wrap) return;
+    const chemSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg>';
+    wrap.innerHTML = (STATE.chemicals || []).map(c => {
+      return '<div class="chem-card">' +
+        '<div class="dot">' + chemSvg + '</div>' +
+        '<div>' +
+          '<h5>' + esc(c.name) + '</h5>' +
+          '<p>' + esc(c.desc) + '</p>' +
+        '</div>' +
+      '</div>';
     }).join('');
   }
+
   function renderServices(){
     const wrap = document.getElementById('servicesGrid');
-    wrap.innerHTML = STATE.services.map(s=>{
-      const thumbInner = s.img ? '' : svcIcon;
-      return '<div class="p-card"><div class="thumb">'+thumbInner+(s.img?'<img src="'+esc(s.img)+'">':'')+'</div><div class="body"><h4>'+esc(s.name)+'</h4><p>'+esc(s.desc)+'</p></div></div>';
+    if(!wrap) return;
+    const svcSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M6 21V9l6-6 6 6v12M10 21v-6h4v6"/></svg>';
+    wrap.innerHTML = (STATE.services || []).map(s => {
+      const thumbContent = s.img ? '<img src="' + esc(s.img) + '" alt="' + esc(s.name) + '">' : svcSvg;
+      return '<div class="svc-card">' +
+        '<div class="svc-thumb">' + thumbContent + '</div>' +
+        '<div class="svc-body">' +
+          '<h4>' + esc(s.name) + '</h4>' +
+          '<p>' + esc(s.desc) + '</p>' +
+        '</div>' +
+      '</div>';
     }).join('');
   }
+
   function renderGallery(){
     const wrap = document.getElementById('galleryGrid');
-    const heights = [340,240,300,260,320,220];
-    wrap.innerHTML = STATE.gallery.map((g,i)=>{
+    if(!wrap) return;
+    const heights = [340, 250, 310, 270, 320, 240];
+    wrap.innerHTML = (STATE.gallery || []).map((g, i) => {
       const h = heights[i % heights.length];
-      const ph = '<svg class="ph" viewBox="0 0 400 '+h+'" style="height:'+h+'px;"><rect width="400" height="'+h+'" fill="#161616"/><g stroke="#d4af37" stroke-width="1" fill="none" opacity=".35"><rect x="40" y="'+(h*0.15)+'" width="320" height="'+(h*0.55)+'" rx="6"/></g></svg>';
-      const imgTag = g.img ? '<img src="'+esc(g.img)+'" style="height:'+h+'px;">' : '';
-      return '<div class="g-card"><div class="thumb" style="height:'+h+'px;">'+ph+imgTag+'</div><div class="overlay"><div class="cap"><span>'+esc(g.category)+'</span><h4>'+esc(g.title)+'</h4></div></div></div>';
+      const ph = '<svg class="ph" viewBox="0 0 400 ' + h + '" style="height:' + h + 'px;width:100%;"><rect width="400" height="' + h + '" fill="#181b20"/><g stroke="#d4af37" stroke-width="1.5" fill="none" opacity=".3"><rect x="30" y="' + (h*0.18) + '" width="340" height="' + (h*0.6) + '" rx="8"/></g></svg>';
+      const imgTag = g.img ? '<img src="' + esc(g.img) + '" style="height:' + h + 'px;" alt="' + esc(g.title) + '">' : '';
+      return '<div class="g-card">' +
+        '<div class="thumb" style="height:' + h + 'px;">' + ph + imgTag + '</div>' +
+        '<div class="overlay">' +
+          '<div class="cap">' +
+            '<span>' + esc(g.category) + '</span>' +
+            '<h4>' + esc(g.title) + '</h4>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
     }).join('');
   }
-  function renderTesti(){
+
+  function renderTestimonials(){
     const wrap = document.getElementById('testiGrid');
-    wrap.innerHTML = STATE.reviews.map(r=>{
-      const stars = '★★★★★'.slice(0, Math.max(0,Math.min(5,r.rating||5)));
-      return '<div class="testi-card"><div class="testi-stars">'+stars+'</div><p class="testi-quote">"'+esc(r.text)+'"</p><div class="testi-who"><b>'+esc(r.name)+'</b><span>'+esc(r.date)+'</span></div></div>';
+    if(!wrap) return;
+    wrap.innerHTML = (STATE.reviews || []).map(r => {
+      const stars = '★★★★★'.slice(0, Math.max(0, Math.min(5, r.rating || 5)));
+      return '<div class="testi-card">' +
+        '<div class="testi-stars">' + stars + '</div>' +
+        '<p class="testi-quote">"' + esc(r.text) + '"</p>' +
+        '<div class="testi-who">' +
+          '<b>' + esc(r.name) + '</b>' +
+          '<span>' + esc(r.date || '2026') + ' &middot; Verified Client</span>' +
+        '</div>' +
+      '</div>';
     }).join('');
   }
 
@@ -942,52 +2579,61 @@
     renderChemicals();
     renderServices();
     renderGallery();
-    renderTesti();
+    renderTestimonials();
   }
 
-  /* ===================== ADMIN FORM HELPERS ===================== */
+  /* ===================== ADMIN FORM & CRUD ===================== */
   function setThumb(id, url){
     const t = document.getElementById(id);
     if(!t) return;
     if(url){ t.src = url; t.classList.add('show'); }
-    else{ t.src=''; t.classList.remove('show'); }
+    else { t.src = ''; t.classList.remove('show'); }
   }
+
   function fillContentForm(){
-    document.getElementById('f-logo-img').value = draft.logo.img;
+    document.getElementById('f-logo-img').value = draft.logo.img || '';
     setThumb('thumb-f-logo-img', draft.logo.img);
-    document.getElementById('f-hero-headline').value = draft.hero.headline;
-    document.getElementById('f-hero-sub').value = draft.hero.sub;
-    document.getElementById('f-hero-img').value = draft.hero.img;
+
+    document.getElementById('f-hero-headline').value = draft.hero.headline || '';
+    document.getElementById('f-hero-sub').value = draft.hero.sub || '';
+    document.getElementById('f-hero-img').value = draft.hero.img || '';
     setThumb('thumb-f-hero-img', draft.hero.img);
-    document.getElementById('f-about-heading').value = draft.about.heading;
-    document.getElementById('f-about-lede').value = draft.about.lede;
-    document.getElementById('f-about-body').value = draft.about.body;
-    document.getElementById('f-about-img').value = draft.about.img;
+
+    document.getElementById('f-about-heading').value = draft.about.heading || '';
+    document.getElementById('f-about-lede').value = draft.about.lede || '';
+    document.getElementById('f-about-body').value = draft.about.body || '';
+    document.getElementById('f-about-img').value = draft.about.img || '';
     setThumb('thumb-f-about-img', draft.about.img);
-    document.getElementById('f-cta-text').value = draft.ctaText;
-    document.getElementById('f-footer-about').value = draft.footerAbout;
 
-    document.getElementById('f-phone').value = draft.contact.phone;
-    document.getElementById('f-whatsapp').value = draft.contact.whatsapp;
-    document.getElementById('f-email').value = draft.contact.email;
-    document.getElementById('f-address').value = draft.contact.address;
-    document.getElementById('f-fb').value = draft.contact.fb;
-    document.getElementById('f-ig').value = draft.contact.ig;
-    document.getElementById('f-tiktok').value = draft.contact.tiktok;
-    document.getElementById('f-google-url').value = draft.contact.googleUrl;
+    document.getElementById('f-cta-text').value = draft.ctaText || '';
+    document.getElementById('f-footer-about').value = draft.footerAbout || '';
 
-    document.getElementById('f-seo-title').value = draft.seo.title;
-    document.getElementById('f-seo-desc').value = draft.seo.desc;
-    document.getElementById('f-reg-number').value = draft.seo.reg;
+    document.getElementById('f-phone').value = draft.contact.phone || '';
+    document.getElementById('f-whatsapp').value = draft.contact.whatsapp || '';
+    document.getElementById('f-email').value = draft.contact.email || '';
+    document.getElementById('f-address').value = draft.contact.address || '';
+    document.getElementById('f-fb').value = draft.contact.fb || '';
+    document.getElementById('f-ig').value = draft.contact.ig || '';
+    document.getElementById('f-tiktok').value = draft.contact.tiktok || '';
+    document.getElementById('f-google-url').value = draft.contact.googleUrl || '';
+
+    document.getElementById('f-seo-title').value = draft.seo.title || '';
+    document.getElementById('f-seo-desc').value = draft.seo.desc || '';
+    document.getElementById('f-reg-number').value = draft.seo.reg || '';
   }
+
   function readContentForm(){
+    draft.logo.img = document.getElementById('f-logo-img').value;
+
     draft.hero.headline = document.getElementById('f-hero-headline').value;
     draft.hero.sub = document.getElementById('f-hero-sub').value;
     draft.hero.img = document.getElementById('f-hero-img').value;
+
     draft.about.heading = document.getElementById('f-about-heading').value;
     draft.about.lede = document.getElementById('f-about-lede').value;
     draft.about.body = document.getElementById('f-about-body').value;
     draft.about.img = document.getElementById('f-about-img').value;
+
     draft.ctaText = document.getElementById('f-cta-text').value;
     draft.footerAbout = document.getElementById('f-footer-about').value;
 
@@ -1005,57 +2651,143 @@
     draft.seo.reg = document.getElementById('f-reg-number').value;
   }
 
+  /* Configuration for dynamic array tabs in Admin */
+  const ARRAY_CONFIG = {
+    products: {
+      container: 'productsAdminList',
+      fields: [
+        { key: 'name', label: 'Product Name' },
+        { key: 'price', label: 'Price (e.g. ₦45,000 / 20L Drum or Contact for Price)' },
+        { key: 'category', label: 'Category (paints, plasters, protective)' },
+        { key: 'desc', label: 'Product Description & Coverage', type: 'textarea' },
+        { key: 'img', label: 'Product Photo', type: 'image' }
+      ],
+      labelKey: 'name',
+      blank: { name: 'New Paint Finish', price: '₦45,000 / Drum', category: 'paints', desc: '', img: '' }
+    },
+    chemicals: {
+      container: 'chemicalsAdminList',
+      fields: [
+        { key: 'name', label: 'Chemical / Raw Material Name' },
+        { key: 'desc', label: 'Technical Function & Formulation Use', type: 'textarea' }
+      ],
+      labelKey: 'name',
+      blank: { name: 'New Chemical Additive', desc: '' }
+    },
+    services: {
+      container: 'servicesAdminList',
+      fields: [
+        { key: 'name', label: 'Service Title' },
+        { key: 'desc', label: 'Scope of Work', type: 'textarea' },
+        { key: 'img', label: 'Service Illustration / Photo', type: 'image' }
+      ],
+      labelKey: 'name',
+      blank: { name: 'New Finishing Service', desc: '', img: '' }
+    },
+    gallery: {
+      container: 'galleryAdminList',
+      fields: [
+        { key: 'title', label: 'Project Name / Site Location' },
+        { key: 'category', label: 'Category Tag' },
+        { key: 'desc', label: 'Notes', type: 'textarea' },
+        { key: 'img', label: 'Project Photo', type: 'image' }
+      ],
+      labelKey: 'title',
+      blank: { title: 'New Project Work', category: 'Interior Finishing', desc: '', img: '' }
+    },
+    reviews: {
+      container: 'reviewsAdminList',
+      fields: [
+        { key: 'name', label: 'Reviewer Name' },
+        { key: 'rating', label: 'Rating (1 to 5 Stars)' },
+        { key: 'text', label: 'Review Quote', type: 'textarea' },
+        { key: 'date', label: 'Year / Date' }
+      ],
+      labelKey: 'name',
+      blank: { name: 'Client Name', rating: 5, text: '', date: '2026' }
+    }
+  };
+
   function renderItemList(containerId, arrName, fields, labelKey){
     const wrap = document.getElementById(containerId);
+    if(!wrap) return;
     wrap.innerHTML = '';
-    draft[arrName].forEach((item, idx)=>{
+
+    (draft[arrName] || []).forEach((item, idx) => {
       const card = document.createElement('div');
       card.className = 'item-card';
-      let inner = '<div class="item-card-head"><span>'+(item[labelKey] || (arrName+' #'+(idx+1)))+'</span><button class="item-del" data-arr="'+arrName+'" data-idx="'+idx+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>';
-      fields.forEach(f=>{
-        const val = (item[f.key]||'').toString().replace(/"/g,'&quot;');
+
+      let inner = '<div class="item-card-head">' +
+        '<span>' + esc(item[labelKey] || (arrName + ' #' + (idx + 1))) + '</span>' +
+        '<button class="item-del" data-arr="' + arrName + '" data-idx="' + idx + '" title="Delete">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>' +
+        '</button>' +
+      '</div>';
+
+      fields.forEach(f => {
+        const val = esc((item[f.key] !== undefined && item[f.key] !== null) ? item[f.key] : '');
         if(f.type === 'textarea'){
-          inner += '<div class="admin-field"><label>'+f.label+'</label><textarea data-arr="'+arrName+'" data-idx="'+idx+'" data-field="'+f.key+'">'+ (item[f.key]||'') +'</textarea></div>';
+          inner += '<div class="admin-field">' +
+            '<label>' + f.label + '</label>' +
+            '<textarea data-arr="' + arrName + '" data-idx="' + idx + '" data-field="' + f.key + '">' + val + '</textarea>' +
+          '</div>';
         } else if(f.type === 'image'){
-          const fieldId = 'img-'+arrName+'-'+idx;
-          inner += '<div class="admin-field"><label>'+f.label+'</label><input id="'+fieldId+'" data-arr="'+arrName+'" data-idx="'+idx+'" data-field="'+f.key+'" value="'+val+'" placeholder="Upload a photo below, or paste a link">'+
-            '<div class="upload-row" data-target="'+fieldId+'"><label class="upload-btn">Upload from device<input type="file" accept="image/*" class="upload-input"></label>'+
-            '<img class="upload-thumb'+(item[f.key] ? ' show' : '')+'" id="thumb-'+fieldId+'" src="'+(item[f.key]||'')+'" alt=""><span class="upload-status" id="status-'+fieldId+'"></span></div></div>';
+          const fieldId = 'img-' + arrName + '-' + idx;
+          inner += '<div class="admin-field">' +
+            '<label>' + f.label + '</label>' +
+            '<input id="' + fieldId + '" data-arr="' + arrName + '" data-idx="' + idx + '" data-field="' + f.key + '" value="' + val + '" placeholder="Upload image below, or paste a link">' +
+            '<div class="upload-row" data-target="' + fieldId + '">' +
+              '<label class="upload-btn">Upload Photo<input type="file" accept="image/*" class="upload-input"></label>' +
+              '<img class="upload-thumb' + (item[f.key] ? ' show' : '') + '" id="thumb-' + fieldId + '" src="' + (item[f.key] || '') + '" alt="">' +
+              '<span class="upload-status" id="status-' + fieldId + '"></span>' +
+            '</div>' +
+          '</div>';
         } else {
-          inner += '<div class="admin-field"><label>'+f.label+'</label><input data-arr="'+arrName+'" data-idx="'+idx+'" data-field="'+f.key+'" value="'+val+'"></div>';
+          inner += '<div class="admin-field">' +
+            '<label>' + f.label + '</label>' +
+            '<input data-arr="' + arrName + '" data-idx="' + idx + '" data-field="' + f.key + '" value="' + val + '">' +
+          '</div>';
         }
       });
+
       card.innerHTML = inner;
       wrap.appendChild(card);
     });
-    wrap.querySelectorAll('[data-field]').forEach(input=>{
-      input.addEventListener('input', ()=>{
+
+    // Wire input listeners
+    wrap.querySelectorAll('[data-field]').forEach(input => {
+      input.addEventListener('input', () => {
         const arr = input.dataset.arr, idx = +input.dataset.idx, field = input.dataset.field;
         draft[arr][idx][field] = input.value;
         const head = input.closest('.item-card').querySelector('.item-card-head span');
-        if(field === labelKey) head.textContent = input.value || (arr+' #'+(idx+1));
+        if(field === labelKey) head.textContent = input.value || (arr + ' #' + (idx + 1));
         updateSizeMeter();
       });
     });
-    wrap.querySelectorAll('.item-del').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
+
+    // Wire delete listeners
+    wrap.querySelectorAll('.item-del').forEach(btn => {
+      btn.addEventListener('click', () => {
         const arr = btn.dataset.arr, idx = +btn.dataset.idx;
-        draft[arr].splice(idx,1);
-        renderAdminArrayTab(arr);
-        updateSizeMeter();
+        if(confirm('Are you sure you want to remove this item?')){
+          draft[arr].splice(idx, 1);
+          renderAdminArrayTab(arr);
+          updateSizeMeter();
+        }
       });
     });
+
     wireUploadRows(wrap);
   }
 
-  /* ---- Image upload: compress in-browser, store as data URL (no external hosting needed) ---- */
+  /* Optimized image compression with canvas */
   function compressImageFile(file, maxDim, quality, format){
     format = format || 'image/jpeg';
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject) => {
       const reader = new FileReader();
-      reader.onload = (e)=>{
+      reader.onload = (e) => {
         const img = new Image();
-        img.onload = ()=>{
+        img.onload = () => {
           let w = img.width, h = img.height;
           if(w > maxDim || h > maxDim){
             if(w > h){ h = Math.round(h * maxDim / w); w = maxDim; }
@@ -1067,40 +2799,44 @@
           ctx.drawImage(img, 0, 0, w, h);
           resolve(canvas.toDataURL(format, quality));
         };
-        img.onerror = ()=> reject(new Error('Could not read that image file.'));
+        img.onerror = () => reject(new Error('Could not read image'));
         img.src = e.target.result;
       };
-      reader.onerror = ()=> reject(new Error('Could not read that file.'));
+      reader.onerror = () => reject(new Error('Could not read file'));
       reader.readAsDataURL(file);
     });
   }
 
   function wireUploadRows(scope){
-    scope.querySelectorAll('.upload-row').forEach(row=>{
+    scope.querySelectorAll('.upload-row').forEach(row => {
       const fileInput = row.querySelector('.upload-input');
-      if(fileInput.dataset.wired) return;
+      if(!fileInput || fileInput.dataset.wired) return;
       fileInput.dataset.wired = '1';
+
       const targetId = row.dataset.target;
       const targetInput = document.getElementById(targetId);
-      const thumb = document.getElementById('thumb-'+targetId);
-      const status = row.querySelector('.upload-status') || document.getElementById('status-'+targetId);
+      const thumb = document.getElementById('thumb-' + targetId);
+      const status = row.querySelector('.upload-status') || document.getElementById('status-' + targetId);
+
       const isLogo = targetId === 'f-logo-img';
-      const maxDim = isLogo ? 400 : 1000;
-      const quality = isLogo ? 0.92 : 0.78;
+      const maxDim = isLogo ? 500 : 1200;
+      const quality = isLogo ? 0.92 : 0.82;
       const format = isLogo ? 'image/png' : 'image/jpeg';
-      fileInput.addEventListener('change', async ()=>{
+
+      fileInput.addEventListener('change', async () => {
         const file = fileInput.files && fileInput.files[0];
         if(!file) return;
-        if(status) status.textContent = 'Processing...';
-        try{
+        if(status) status.textContent = 'Optimizing image...';
+
+        try {
           const dataUrl = await compressImageFile(file, maxDim, quality, format);
           targetInput.value = dataUrl;
           targetInput.dispatchEvent(new Event('input'));
           if(thumb){ thumb.src = dataUrl; thumb.classList.add('show'); }
           if(status) status.textContent = 'Uploaded ✓';
           updateSizeMeter();
-        }catch(err){
-          if(status) status.textContent = 'Upload failed — try a smaller image.';
+        } catch(err) {
+          if(status) status.textContent = 'Upload failed, please try another image.';
         }
       });
     });
@@ -1110,23 +2846,16 @@
     const meter = document.getElementById('sizeMeter');
     if(!meter) return;
     const bytes = new Blob([JSON.stringify(draft)]).size;
-    const mb = bytes / (1024*1024);
-    meter.textContent = 'Content size: ' + mb.toFixed(2) + ' MB of 5 MB limit';
-    meter.classList.toggle('warn', mb > 4.3);
+    const mb = bytes / (1024 * 1024);
+    meter.textContent = 'Content size: ' + mb.toFixed(2) + ' MB of ' + MAX_CONTENT_MB.toFixed(2) + ' MB limit';
+    meter.classList.toggle('warn', mb > (MAX_CONTENT_MB - 3.0));
   }
-
-  const ARRAY_CONFIG = {
-    products: { container:'productsAdminList', fields:[{key:'name',label:'Name'},{key:'desc',label:'Description',type:'textarea'},{key:'img',label:'Image',type:'image'}], labelKey:'name', blank:{name:'New Product',desc:'',img:''} },
-    chemicals: { container:'chemicalsAdminList', fields:[{key:'name',label:'Name'},{key:'desc',label:'Description',type:'textarea'}], labelKey:'name', blank:{name:'New Chemical',desc:''} },
-    services: { container:'servicesAdminList', fields:[{key:'name',label:'Name'},{key:'desc',label:'Description',type:'textarea'},{key:'img',label:'Image',type:'image'}], labelKey:'name', blank:{name:'New Service',desc:'',img:''} },
-    gallery: { container:'galleryAdminList', fields:[{key:'title',label:'Project Title'},{key:'category',label:'Category'},{key:'desc',label:'Description',type:'textarea'},{key:'img',label:'Image',type:'image'}], labelKey:'title', blank:{title:'New Project',category:'Interior Design',desc:'',img:''} },
-    reviews: { container:'reviewsAdminList', fields:[{key:'name',label:'Reviewer Name'},{key:'rating',label:'Rating (1-5)'},{key:'text',label:'Review Text',type:'textarea'},{key:'date',label:'Date'}], labelKey:'name', blank:{name:'New Reviewer',rating:5,text:'',date:'2026'} }
-  };
 
   function renderAdminArrayTab(arrName){
     const cfg = ARRAY_CONFIG[arrName];
-    renderItemList(cfg.container, arrName, cfg.fields, cfg.labelKey);
+    if(cfg) renderItemList(cfg.container, arrName, cfg.fields, cfg.labelKey);
   }
+
   function renderAllAdminTabs(){
     fillContentForm();
     Object.keys(ARRAY_CONFIG).forEach(renderAdminArrayTab);
@@ -1134,99 +2863,205 @@
     updateSizeMeter();
   }
 
-  Object.keys(ARRAY_CONFIG).forEach(arrName=>{
-    const btnId = 'add' + arrName.charAt(0).toUpperCase() + arrName.slice(1,-1) + 'Btn';
+  // Add Item Buttons in Admin
+  document.getElementById('addProductBtn').addEventListener('click', () => {
+    draft.products.push(Object.assign({}, ARRAY_CONFIG.products.blank));
+    renderAdminArrayTab('products');
+    updateSizeMeter();
   });
-  document.getElementById('addProductBtn').addEventListener('click', ()=>{ draft.products.push(Object.assign({},ARRAY_CONFIG.products.blank)); renderAdminArrayTab('products'); });
-  document.getElementById('addChemicalBtn').addEventListener('click', ()=>{ draft.chemicals.push(Object.assign({},ARRAY_CONFIG.chemicals.blank)); renderAdminArrayTab('chemicals'); });
-  document.getElementById('addServiceBtn').addEventListener('click', ()=>{ draft.services.push(Object.assign({},ARRAY_CONFIG.services.blank)); renderAdminArrayTab('services'); });
-  document.getElementById('addGalleryBtn').addEventListener('click', ()=>{ draft.gallery.push(Object.assign({},ARRAY_CONFIG.gallery.blank)); renderAdminArrayTab('gallery'); });
-  document.getElementById('addReviewBtn').addEventListener('click', ()=>{ draft.reviews.push(Object.assign({},ARRAY_CONFIG.reviews.blank)); renderAdminArrayTab('reviews'); });
+  document.getElementById('addChemicalBtn').addEventListener('click', () => {
+    draft.chemicals.push(Object.assign({}, ARRAY_CONFIG.chemicals.blank));
+    renderAdminArrayTab('chemicals');
+    updateSizeMeter();
+  });
+  document.getElementById('addServiceBtn').addEventListener('click', () => {
+    draft.services.push(Object.assign({}, ARRAY_CONFIG.services.blank));
+    renderAdminArrayTab('services');
+    updateSizeMeter();
+  });
+  document.getElementById('addGalleryBtn').addEventListener('click', () => {
+    draft.gallery.push(Object.assign({}, ARRAY_CONFIG.gallery.blank));
+    renderAdminArrayTab('gallery');
+    updateSizeMeter();
+  });
+  document.getElementById('addReviewBtn').addEventListener('click', () => {
+    draft.reviews.push(Object.assign({}, ARRAY_CONFIG.reviews.blank));
+    renderAdminArrayTab('reviews');
+    updateSizeMeter();
+  });
 
-  /* ===================== PERSISTENCE (Supabase) ===================== */
-  const SB_URL = 'https://fajtthnaxubcbmpceopf.supabase.co';
-  const SB_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhanR0aG5heHViY2JtcGNlb3BmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc0MDEyOTgsImV4cCI6MjEwMjk3NzI5OH0.xaKhogbm5-vKHeCAHevrhODqMIaoE-P4lju-lZgoSGI';
-  const SB_ROW_ID = 'main';
-  const SB_HEADERS = { apikey: SB_ANON_KEY, Authorization: 'Bearer ' + SB_ANON_KEY };
-
+  /* ===================== SUPABASE PERSISTENCE ===================== */
   async function loadState(){
-    try{
+    try {
       const res = await fetch(SB_URL + '/rest/v1/site_content?id=eq.' + SB_ROW_ID + '&select=data', { headers: SB_HEADERS });
       if(res.ok){
         const rows = await res.json();
-        if(rows && rows[0] && rows[0].data) STATE = deepMerge(DEFAULTS, rows[0].data);
+        if(rows && rows[0] && rows[0].data){
+          STATE = deepMerge(DEFAULTS, rows[0].data);
+        }
       }
-    }catch(e){ /* offline, or table not set up yet — falls back to defaults */ }
+    } catch(e) {
+      console.warn('Supabase offline or initial load fallback to defaults', e);
+    }
     renderAll();
   }
+
   async function saveState(newState){
     STATE = newState;
     const res = await fetch(SB_URL + '/rest/v1/site_content', {
       method: 'POST',
-      headers: Object.assign({}, SB_HEADERS, { 'Content-Type': 'application/json', Prefer: 'resolution=merge-duplicates,return=minimal' }),
+      headers: Object.assign({}, SB_HEADERS, {
+        'Content-Type': 'application/json',
+        Prefer: 'resolution=merge-duplicates,return=minimal'
+      }),
       body: JSON.stringify([{ id: SB_ROW_ID, data: STATE, updated_at: new Date().toISOString() }])
     });
+
     if(!res.ok){
-      const errText = await res.text().catch(()=> '');
+      const errText = await res.text().catch(() => '');
       throw new Error('Supabase save failed (' + res.status + '): ' + errText);
     }
     renderAll();
   }
+
   async function deleteState(){
-    const res = await fetch(SB_URL + '/rest/v1/site_content?id=eq.' + SB_ROW_ID, { method:'DELETE', headers: SB_HEADERS });
+    const res = await fetch(SB_URL + '/rest/v1/site_content?id=eq.' + SB_ROW_ID, { method: 'DELETE', headers: SB_HEADERS });
     if(!res.ok){
-      const errText = await res.text().catch(()=> '');
+      const errText = await res.text().catch(() => '');
       throw new Error('Supabase reset failed (' + res.status + '): ' + errText);
     }
   }
 
-  /* ===================== UI WIRING ===================== */
-  document.getElementById('f-logo-img').addEventListener('input', function(){ if(draft){ draft.logo.img = this.value; setThumb('thumb-f-logo-img', this.value); updateSizeMeter(); } });
-  document.getElementById('f-hero-img').addEventListener('input', function(){ if(draft){ draft.hero.img = this.value; setThumb('thumb-f-hero-img', this.value); updateSizeMeter(); } });
-  document.getElementById('f-about-img').addEventListener('input', function(){ if(draft){ draft.about.img = this.value; setThumb('thumb-f-about-img', this.value); updateSizeMeter(); } });
+  /* ===================== BACKUP & EXPORT/IMPORT ===================== */
+  document.getElementById('exportBackupBtn').addEventListener('click', () => {
+    readContentForm();
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(draft || STATE, null, 2));
+    const dlAnchor = document.createElement('a');
+    dlAnchor.setAttribute("href", dataStr);
+    dlAnchor.setAttribute("download", "lavish_exclusive_chemical_backup_" + new Date().toISOString().slice(0,10) + ".json");
+    document.body.appendChild(dlAnchor);
+    dlAnchor.click();
+    dlAnchor.remove();
+    showToast('Backup JSON downloaded successfully');
+  });
 
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', ()=>{ header.classList.toggle('scrolled', window.scrollY > 20); }, {passive:true});
+  document.getElementById('importBackupInput').addEventListener('change', (e) => {
+    const file = e.target.files && e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      try {
+        const imported = JSON.parse(evt.target.result);
+        draft = deepMerge(DEFAULTS, imported);
+        renderAllAdminTabs();
+        showToast('Backup data loaded into admin. Click "Save & Publish" to go live.');
+      } catch(err) {
+        alert('Invalid JSON backup file.');
+      }
+    };
+    reader.readAsText(file);
+  });
 
-  const mobileMenu = document.getElementById('mobileMenu');
-  document.getElementById('burgerBtn').addEventListener('click', ()=> mobileMenu.classList.add('open'));
-  document.getElementById('closeBurger').addEventListener('click', ()=> mobileMenu.classList.remove('open'));
-  document.querySelectorAll('.mm-link').forEach(a=> a.addEventListener('click', ()=> mobileMenu.classList.remove('open')));
+  /* Ping Supabase Button */
+  document.getElementById('pingSupabaseBtn').addEventListener('click', async () => {
+    const statusText = document.getElementById('pingStatusText');
+    statusText.textContent = 'Pinging...';
+    const t0 = performance.now();
+    try {
+      const res = await fetch(SB_URL + '/rest/v1/site_content?id=eq.' + SB_ROW_ID + '&select=id', { headers: SB_HEADERS });
+      const t1 = performance.now();
+      if(res.ok){
+        statusText.innerHTML = '<span style="color:#1a7431;font-weight:700;">Online 200 OK (' + Math.round(t1 - t0) + 'ms) &middot; Active</span>';
+      } else {
+        statusText.textContent = 'Status: ' + res.status;
+      }
+    } catch(err) {
+      statusText.innerHTML = '<span style="color:#d9383a;">Connection error</span>';
+    }
+  });
 
-  const revealEls = document.querySelectorAll('.reveal');
-  try{
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, {threshold:.12});
-    revealEls.forEach(el=> io.observe(el));
-  }catch(e){
-    revealEls.forEach(el=> el.classList.add('in'));
-  }
-
-  document.querySelectorAll('.faq-item').forEach(item=>{
-    const a = item.querySelector('.faq-a');
-    if(item.classList.contains('open')) a.style.maxHeight = a.scrollHeight + 'px';
-    item.querySelector('.faq-q').addEventListener('click', ()=>{
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i=>{ i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = 0; });
-      if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  /* ===================== UI INTERACTIONS ===================== */
+  // Product category filter tabs
+  document.querySelectorAll('#productFilterBar .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#productFilterBar .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentProductFilter = btn.dataset.filter;
+      renderProducts();
     });
   });
 
-  document.getElementById('submitForm').addEventListener('click', ()=>{
-    const name = document.getElementById('cName').value || 'N/A';
+  // Header scroll transition
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 25);
+  }, { passive: true });
+
+  // Mobile menu open / close
+  const mobileMenu = document.getElementById('mobileMenu');
+  document.getElementById('burgerBtn').addEventListener('click', () => mobileMenu.classList.add('open'));
+  document.getElementById('closeBurger').addEventListener('click', () => mobileMenu.classList.remove('open'));
+  document.querySelectorAll('.mm-link').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+
+  // Scroll reveal with IntersectionObserver
+  const revealEls = document.querySelectorAll('.reveal');
+  try {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => io.observe(el));
+  } catch(e) {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const a = item.querySelector('.faq-a');
+    if(item.classList.contains('open')) a.style.maxHeight = a.scrollHeight + 'px';
+
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-a').style.maxHeight = 0;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Contact form submission
+  document.getElementById('submitForm').addEventListener('click', () => {
+    const name = document.getElementById('cName').value || 'Customer';
     const email = document.getElementById('cEmail').value || 'N/A';
     const phone = document.getElementById('cPhone').value || 'N/A';
     const service = document.getElementById('cService').value;
     const msg = document.getElementById('cMsg').value || '';
-    const subject = encodeURIComponent('Website Enquiry from ' + name);
-    const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nPhone: '+phone+'\nService: '+service+'\nMessage: '+msg);
-    window.location.href = 'mailto:'+STATE.contact.email+'?subject='+subject+'&body='+body;
+
+    const subject = encodeURIComponent('Product & Finishing Enquiry from ' + name);
+    const body = encodeURIComponent(
+      'Full Name: ' + name + '\n' +
+      'Phone: ' + phone + '\n' +
+      'Email: ' + email + '\n' +
+      'Interest: ' + service + '\n' +
+      'Message / Quantities:\n' + msg
+    );
+
+    window.location.href = 'mailto:' + STATE.contact.email + '?subject=' + subject + '&body=' + body;
     const toast = document.getElementById('formToast');
     toast.classList.add('show');
   });
 
-  /* ---- Admin drawer / gate ---- */
+  /* ===================== ADMIN DRAWER & GATE ===================== */
   const launcher = document.getElementById('adminLauncher');
   const drawer = document.getElementById('adminDrawer');
   const scrim = document.getElementById('adminScrim');
@@ -1234,51 +3069,76 @@
   const panels = document.getElementById('adminPanels');
   const tabsBar = document.getElementById('adminTabs');
   const footBar = document.getElementById('adminFoot');
+  const lockBtn = document.getElementById('adminLockBtn');
   const gateInput = document.getElementById('gatePassInput');
   const gateError = document.getElementById('gateError');
 
   function openDrawer(){
     drawer.classList.add('open');
     scrim.classList.add('open');
-    if(unlocked) showUnlocked();
+    if(sessionStorage.getItem('lec_admin_auth') === '1' || unlocked){
+      unlocked = true;
+      showUnlocked();
+    } else {
+      gate.style.display = 'flex';
+      panels.style.display = 'none';
+      tabsBar.style.display = 'none';
+      footBar.style.display = 'none';
+      lockBtn.style.display = 'none';
+      gateInput.value = '';
+      gateError.textContent = '';
+      setTimeout(() => gateInput.focus(), 200);
+    }
   }
+
   function closeDrawer(){
     drawer.classList.remove('open');
     scrim.classList.remove('open');
   }
+
   function showUnlocked(){
     gate.style.display = 'none';
     panels.style.display = 'block';
     tabsBar.style.display = 'flex';
     footBar.style.display = 'flex';
+    lockBtn.style.display = 'block';
     draft = JSON.parse(JSON.stringify(STATE));
     renderAllAdminTabs();
   }
+
   function attemptUnlock(){
     if(gateInput.value === ADMIN_PASS){
       unlocked = true;
+      sessionStorage.setItem('lec_admin_auth', '1');
       gateError.textContent = '';
       showUnlocked();
     } else {
-      gateError.textContent = 'Incorrect passcode — try again.';
+      gateError.textContent = 'Incorrect passcode — please check and try again.';
       gateInput.value = '';
       gateInput.focus();
     }
   }
 
   launcher.addEventListener('click', openDrawer);
+  document.getElementById('footAdminLink').addEventListener('click', openDrawer);
   document.getElementById('closeAdmin').addEventListener('click', closeDrawer);
   scrim.addEventListener('click', closeDrawer);
 
-  /* ---- Hidden admin access: tap the footer logo 5x quickly, or type "admin" on a keyboard ---- */
+  lockBtn.addEventListener('click', () => {
+    unlocked = false;
+    sessionStorage.removeItem('lec_admin_auth');
+    openDrawer();
+  });
+
+  /* Hidden access: click footer logo 5 times in 3s, or type "admin" */
   (function(){
     const trigger = document.getElementById('footLogoTrigger');
     let tapCount = 0, tapTimer = null;
     if(trigger){
-      trigger.addEventListener('click', ()=>{
+      trigger.addEventListener('click', () => {
         tapCount++;
         clearTimeout(tapTimer);
-        tapTimer = setTimeout(()=>{ tapCount = 0; }, 3000);
+        tapTimer = setTimeout(() => { tapCount = 0; }, 3000);
         if(tapCount >= 5){
           tapCount = 0;
           clearTimeout(tapTimer);
@@ -1286,8 +3146,9 @@
         }
       });
     }
+
     let typed = '';
-    window.addEventListener('keydown', (e)=>{
+    window.addEventListener('keydown', (e) => {
       const tag = (document.activeElement && document.activeElement.tagName) || '';
       if(tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
       if(e.key.length !== 1) return;
@@ -1295,15 +3156,17 @@
       if(typed === 'admin') openDrawer();
     });
   })();
-  document.getElementById('gateUnlockBtn').addEventListener('click', attemptUnlock);
-  gateInput.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') attemptUnlock(); });
 
-  document.querySelectorAll('.admin-tab').forEach(tab=>{
-    tab.addEventListener('click', ()=>{
-      document.querySelectorAll('.admin-tab').forEach(t=> t.classList.remove('active'));
-      document.querySelectorAll('.admin-panel').forEach(p=> p.classList.remove('active'));
+  document.getElementById('gateUnlockBtn').addEventListener('click', attemptUnlock);
+  gateInput.addEventListener('keydown', (e) => { if(e.key === 'Enter') attemptUnlock(); });
+
+  document.querySelectorAll('.admin-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.admin-panel').forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
-      document.querySelector('.admin-panel[data-panel="'+tab.dataset.tab+'"]').classList.add('active');
+      const targetPanel = document.querySelector('.admin-panel[data-panel="' + tab.dataset.tab + '"]');
+      if(targetPanel) targetPanel.classList.add('active');
     });
   });
 
@@ -1311,43 +3174,48 @@
   function showToast(msg){
     toast.textContent = msg;
     toast.classList.add('show');
-    setTimeout(()=> toast.classList.remove('show'), 2800);
+    setTimeout(() => toast.classList.remove('show'), 3000);
   }
 
-  document.getElementById('adminSave').addEventListener('click', async ()=>{
+  document.getElementById('adminSave').addEventListener('click', async () => {
     readContentForm();
-    try{
+    const saveBtn = document.getElementById('adminSave');
+    saveBtn.textContent = 'Saving...';
+    try {
       await saveState(draft);
-      showToast('Saved — now live for all visitors');
-    }catch(e){
+      showToast('Saved — changes are now live for all visitors');
+    } catch(e) {
       console.error('Save failed:', e);
-      showToast('Save failed — check your connection and try again');
+      showToast('Save failed — check your internet connection and try again');
+    } finally {
+      saveBtn.textContent = 'Save & Publish';
     }
   });
 
   let resetArmed = false;
   const resetBtn = document.getElementById('adminReset');
-  resetBtn.addEventListener('click', async ()=>{
+  resetBtn.addEventListener('click', async () => {
     if(!resetArmed){
       resetArmed = true;
-      resetBtn.textContent = 'Click again to confirm reset';
-      setTimeout(()=>{ resetArmed = false; resetBtn.textContent = 'Reset to Default'; }, 4000);
+      resetBtn.textContent = 'Click again to confirm';
+      setTimeout(() => { resetArmed = false; resetBtn.textContent = 'Reset Default'; }, 4000);
       return;
     }
     resetArmed = false;
-    resetBtn.textContent = 'Reset to Default';
-    try{
+    resetBtn.textContent = 'Reset Default';
+    try {
       await deleteState();
       STATE = JSON.parse(JSON.stringify(DEFAULTS));
       draft = JSON.parse(JSON.stringify(STATE));
       renderAll();
       renderAllAdminTabs();
-      showToast('Reset to default content');
-    }catch(e){
-      showToast('Reset failed — check your connection and try again');
+      showToast('Reset to factory default content');
+    } catch(e) {
+      showToast('Reset failed — check your connection');
     }
   });
 
+  // Initialize and load live state from Supabase
   loadState();
 })();
 </script>
