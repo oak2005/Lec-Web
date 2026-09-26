@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/logo.png">
 <style>
   :root {
     --black: #0c0d0f;
@@ -1664,7 +1666,7 @@
 <header id="siteHeader">
   <div class="nav-inner">
     <a href="#home" class="logo">
-      <span class="logo-mark" id="logoMarkHeader"></span>
+      <span class="logo-mark has-img" id="logoMarkHeader"><img src="assets/logo.png" class="logo-img" alt="LEC" loading="eager"></span>
       <div>
         <span>Lavish <b>Exclusive</b> Chemical</span>
         <span class="logo-sub">Premium Paints &amp; Industrial Additives</span>
@@ -1695,7 +1697,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <div class="top">
     <span class="logo" style="color:#fff;">
-      <span class="logo-mark" id="logoMarkMobile"></span>
+      <span class="logo-mark has-img" id="logoMarkMobile"><img src="assets/logo.png" class="logo-img" alt="LEC" loading="eager"></span>
       <span>Lavish <b>Exclusive</b></span>
     </span>
     <button class="mobile-close-btn" id="closeBurger" aria-label="Close menu">
@@ -1747,6 +1749,7 @@
     <div class="hero-visual reveal" id="heroVisualImg">
       <div class="scene"></div>
       <div class="frame-inner"></div>
+      <img src="assets/hero.jpg" class="dyn-img" alt="Lavish Exclusive Chemical" fetchpriority="high" loading="eager" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
     </div>
   </div>
 </section>
@@ -1756,6 +1759,7 @@
   <div class="wrap about-grid">
     <div class="about-visual reveal" id="aboutVisualImg">
       <div class="scene"></div>
+      <img src="assets/about.jpg" class="dyn-img" alt="About Lavish Exclusive Chemical" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
     </div>
     <div class="reveal">
       <span class="eyebrow">Who We Are</span>
@@ -2032,7 +2036,7 @@
     <div class="foot-grid">
       <div>
         <div class="foot-logo" id="footLogoTrigger">
-          <span class="logo-mark" id="logoMarkFooter"></span>
+          <span class="logo-mark has-img" id="logoMarkFooter"><img src="assets/logo.png" class="logo-img" alt="LEC" loading="lazy"></span>
           Lavish Exclusive Chemical
         </div>
         <p class="foot-sub" id="footerAbout">Manufacturers of premium decorative and protective paints, industrial paint chemicals, and interior finishing solutions across Nigeria. Registered Business RN: 9043776.</p>
@@ -2298,17 +2302,17 @@
 (function(){
   /* ===================== DEFAULT SITE DATA ===================== */
   const DEFAULTS = {
-    logo: { img: "" },
+    logo: { img: "assets/logo.png" },
     hero: {
       headline: "Luxury Paints. High-Grade Chemicals. Exceptional Finishes.",
       sub: "Manufacturers of premium decorative and protective paints, industrial paint chemicals, and professional interior finishing solutions for homes, offices, and commercial properties.",
-      img: ""
+      img: "assets/hero.jpg"
     },
     about: {
       heading: "A trusted Nigerian manufacturer in premium paints and interior finishing.",
       lede: "Lavish Exclusive Chemical (LEC) specializes in the production and supply of premium decorative and protective paints, industrial paint chemicals, and complete building finishing solutions.",
       body: "We combine innovation, craftsmanship, and premium-quality materials to deliver exceptional results for residential, commercial, and industrial projects. Beyond paint manufacturing, LEC also provides professional interior design, renovation, property finishing, and space transformation services tailored to each client's vision.",
-      img: ""
+      img: "assets/about.jpg"
     },
     ctaText: "Talk to our technical team on WhatsApp for factory-direct prices, free estimates, and fast site delivery across Nigeria.",
     footerAbout: "Manufacturers of premium decorative and protective paints, industrial paint chemicals, and interior finishing solutions across Nigeria — Luxury Meets Innovation.",
@@ -2333,63 +2337,63 @@
         category: "paints",
         price: "₦48,000 / 20L Drum",
         desc: "Heavy-textured decorative wall coating engineered for superior weather resistance, crack bridging, and architectural luxury interiors and exterior facades.",
-        img: ""
+        img: "assets/products/gravitex.jpg"
       },
       {
         name: "Emulsion Paint",
         category: "paints",
         price: "₦26,000 / 20L Drum",
         desc: "Smooth, breathable, high-coverage matte finish for interior and exterior walls. Easy application with rich, long-lasting color pigment.",
-        img: ""
+        img: "assets/products/emulsion-paint.jpg"
       },
       {
         name: "Satin Paint",
         category: "paints",
         price: "₦45,000 / 20L Drum",
         desc: "Silky soft-sheen luxury finish that resists stains, fingerprints, and wipes clean easily with water. Ideal for living rooms and master bedrooms.",
-        img: ""
+        img: "assets/products/satin-paint.jpg"
       },
       {
         name: "Matte Paint",
         category: "paints",
         price: "₦32,000 / 20L Drum",
         desc: "Flat, elegant velvety finish that diffuses light and masks minor plaster imperfections on walls and ceilings.",
-        img: ""
+        img: "assets/products/matte-paint.jpg"
       },
       {
         name: "Marble Trowel",
         category: "plasters",
         price: "₦65,000 / 20L Bucket",
         desc: "Hand-crafted Italian marble-effect plaster formulated with natural crushed marble dust for high-end luxury feature walls.",
-        img: ""
+        img: "assets/products/marble-trowel.jpg"
       },
       {
         name: "Stucco",
         category: "plasters",
         price: "₦58,000 / 20L Bucket",
         desc: "Classic Venetian decorative plaster delivering polished stone depth, marbleized sheen, and tactile luxury for premium interiors.",
-        img: ""
+        img: "assets/products/stucco.jpg"
       },
       {
         name: "Screeding / Putty",
         category: "plasters",
         price: "₦18,500 / 20kg Bag",
         desc: "Ultra-fine wall-smoothing compound designed to eliminate pinholes and create a mirror-flat, paint-ready surface.",
-        img: ""
+        img: "assets/products/screeding-putty.jpg"
       },
       {
         name: "Protective Paints",
         category: "protective",
         price: "₦52,000 / 20L Drum",
         desc: "Weatherproof and anti-fungal barrier coatings designed to withstand heavy rain, ultraviolet radiation, and humidity.",
-        img: ""
+        img: "assets/products/protective-paints.jpg"
       },
       {
         name: "Decorative Paints",
         category: "paints",
         price: "₦46,000 / 20L Drum",
         desc: "Custom-formulated decorative metallic, pearl, and textured finishes tailored to upscale architectural projects.",
-        img: ""
+        img: "assets/products/decorative-paints.jpg"
       }
     ],
     chemicals: [
@@ -2697,6 +2701,15 @@
     renderGallery();
     renderTestimonials();
   }
+
+  // Instant Cache-First Execution (Renders in 0ms without waiting for network)
+  try {
+    const cached = localStorage.getItem('lec_site_data');
+    if (cached) {
+      STATE = deepMerge(DEFAULTS, JSON.parse(cached));
+    }
+  } catch(e) {}
+  renderAll();
 
   /* ===================== ADMIN FORM & CRUD ===================== */
   function setThumb(id, url){
@@ -3014,16 +3027,23 @@
         const rows = await res.json();
         if(rows && rows[0] && rows[0].data){
           STATE = deepMerge(DEFAULTS, rows[0].data);
+          try {
+            localStorage.setItem('lec_site_data', JSON.stringify(STATE));
+          } catch(e) {}
+          renderAll();
         }
       }
     } catch(e) {
-      console.warn('Supabase offline or initial load fallback to defaults', e);
+      console.warn('Supabase offline or initial load fallback to local/cached defaults', e);
     }
-    renderAll();
   }
 
   async function saveState(newState){
     STATE = newState;
+    try {
+      localStorage.setItem('lec_site_data', JSON.stringify(STATE));
+    } catch(e) {}
+
     const res = await fetch(SB_URL + '/rest/v1/site_content', {
       method: 'POST',
       headers: Object.assign({}, SB_HEADERS, {
@@ -3041,6 +3061,9 @@
   }
 
   async function deleteState(){
+    try {
+      localStorage.removeItem('lec_site_data');
+    } catch(e) {}
     const res = await fetch(SB_URL + '/rest/v1/site_content?id=eq.' + SB_ROW_ID, { method: 'DELETE', headers: SB_HEADERS });
     if(!res.ok){
       const errText = await res.text().catch(() => '');
